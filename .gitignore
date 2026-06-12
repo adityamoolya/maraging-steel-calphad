@@ -1,0 +1,7 @@
+# Ignore Quantum ESPRESSO scratch files
+dft/outdir/
+dft/out/
+
+# Ignore Quantum ESPRESSO scratch files
+dft/outdir/
+dft/out/
