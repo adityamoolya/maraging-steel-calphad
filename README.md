@@ -1,29 +1,32 @@
-# Maraging Steel Thermodynamic Modeling
+# DFT-Informed Thermodynamics of Maraging Steel Aging
 
-## Overview
-This project focuses on the computational thermodynamic modeling of an ultra-high strength maraging steel alloy. The specific composition under investigation is **Fe–18Ni-8.5Co–5Mo-0.7Ti-0.2Al (wt.%)**, which is the focus of the included research paper: *"Heterogeneous nucleation of Ni3Ti by Mo-enriched particles enhances strength and fracture toughness of maraging steel"* (Xu et al., 2025).
+This project aims to provide a computational thermodynamic explanation for the precipitation behavior observed in recent experimental literature on ultra-high strength maraging steels (e.g., *Heterogeneous nucleation of Ni3Ti by Mo-enriched particles enhances strength and fracture toughness of maraging steel*, Xu et al., 2025).
 
-The primary goal of the provided codebase is to evaluate various Thermodynamic Databases (`.tdb` files) using the CALPHAD approach to determine if they contain the necessary elemental interactions (unary, binary, and ternary) to accurately model this specific alloy. 
+## Overall Objective
+Use Density Functional Theory (DFT) formation energies to support CALPHAD modeling of aging and precipitation in Fe-Ni-Co-Mo-Ti-Al alloys, explaining the transition from Mo-enriched clusters to Ni3Ti ($\eta$) precipitates.
 
-## Project Structure
-- `structel.pdf`: The reference research paper detailing the microstructure, mechanical properties, precipitation behavior (e.g., Ni3Ti and Mo-enriched particles), and composition of the target maraging steel.
-- `02_list_elements.py`: A Python script that parses the `COST507-modified.tdb` database using `pycalphad` and `tinydb`. It extracts and lists available unary, binary, ternary, and higher-order interactions for the target elements (`Fe`, `Ni`, `Co`, `Mo`, `Ti`, `Al`), and identifies missing interactions.
-- `03.py`: A similar Python script configured to analyze another database (e.g., `mc_fecocrnbti.tdb`). It provides a coverage summary of found vs. needed binary and ternary interactions for our specific system.
-- `our_use_case.txt`: Contains the output/summary of a database analysis, showing exactly which elements and specific phase interactions are covered or missing for the target alloy.
-- `COST507-modified.tdb`: A modified version of the COST507 thermodynamic database used for the analysis.
-- `prop_plot.ipynb` & `1.testPycalphadVersion.ipynb`: Auxiliary Jupyter notebooks for plotting properties and testing `pycalphad` environments. 
+## Project Roadmap
 
-## Requirements
-To run the database analysis scripts, you need Python and the following libraries:
-- `pycalphad`
-- `tinydb`
+### Phase 1: CALPHAD Thermodynamic Baseline (Current Phase)
+*   **Goal:** Calculate thermodynamic driving forces and equilibrium phase fractions for the maraging steel composition at the experimentally relevant Duplex Aging Treatment (DAT) temperatures (370 °C and 480 °C).
+*   **Tool:** Python (`pycalphad`) + `mc_fe_v2062_clean.tdb` database.
+*   **Action Items:**
+    *   Validate the database's default behavior (Completed).
+    *   Suspend competing metastable phases (like $\gamma^\prime$) to force the solver to evaluate the driving force for $\eta$-Ni₃Ti.
+    *   Extract the driving forces for Mo-rich phases (Fe₇Mo₂, Laves, $\mu$-phase) at 370 °C to prove they form first.
+    *   Extract driving forces for Ni₃Ti at 480 °C.
 
-## Usage
-Run the analysis scripts to evaluate a specific `.tdb` database against the target maraging steel composition:
+### Phase 2: DFT Formation Energies
+*   **Goal:** Calculate exact 0 K formation energies for the relevant phases from first principles to verify or correct the CALPHAD database.
+*   **Tool:** Quantum ESPRESSO (or similar DFT code).
+*   **Action Items:**
+    *   Set up unit cells for BCC Fe matrix, $\eta$-Ni₃Ti, and Fe₇Mo₂ (or relevant Mo-cluster structure).
+    *   Run structural relaxations and total energy calculations.
+    *   Compare the DFT formation energies against the enthalpy values used in the CALPHAD `.tdb` file.
 
-```bash
-python 02_list_elements.py
-python 03.py
-```
-
-These scripts will output a detailed breakdown of the available and missing thermodynamic parameters. This is a crucial first step in determining if a database is suitable for simulating the phase equilibria described in the reference paper.
+### Phase 3: Phase-Field Modeling (Optional / Stretch Goal)
+*   **Goal:** Simulate the spatial and temporal evolution of the precipitates to visually match the microscopy images from the paper.
+*   **Tool:** MICRESS, MOOSE, or PRISMA (kinetics).
+*   **Action Items:**
+    *   Input CALPHAD driving forces and DFT interfacial energies to model heterogeneous nucleation of Ni₃Ti on Mo-particles.
+    *   *Note: This is considered a stretch goal because setting up a multi-component kinetic model requires significant parameter tuning and computational time.*
