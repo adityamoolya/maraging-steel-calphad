@@ -1,0 +1,44 @@
+&CONTROL
+  calculation  = 'scf',
+  prefix       = 'ni3ti',
+  pseudo_dir   = './pseudo/',
+  outdir       = './outdir/'
+/
+&SYSTEM
+  ibrav       = 4,            ! Hexagonal lattice (D024)
+  celldm(1)   = 9.543,        ! a = 5.05 Angstroms
+  celldm(3)   = 1.629,        ! c/a ratio
+  nat         = 16,           ! 16 atoms in the unit cell (4 Ni3Ti formula units)
+  ntyp        = 2,            ! Ni and Ti
+  ecutwfc     = 45.0,
+  ecutrho     = 360.0,
+  occupations = 'smearing',
+  smearing    = 'marzari-vanderbilt',
+  degauss     = 0.02
+/
+&ELECTRONS
+  conv_thr    = 1.0d-8
+  mixing_beta = 0.4         ! Lower mixing beta helps complex metals converge
+/
+ATOMIC_SPECIES
+  Ni  58.693  Ni.pbe-nd-rrkjus.UPF
+  Ti  47.867  Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (crystal)
+  Ti 0.000000 0.000000 0.000000
+  Ti 0.000000 0.000000 0.500000
+  Ti 0.333333 0.666667 0.250000
+  Ti 0.666667 0.333333 0.750000
+  Ni 0.500000 0.000000 0.000000
+  Ni 0.000000 0.500000 0.000000
+  Ni 0.500000 0.500000 0.000000
+  Ni 0.500000 0.000000 0.500000
+  Ni 0.000000 0.500000 0.500000
+  Ni 0.500000 0.500000 0.500000
+  Ni 0.827849 0.655698 0.250000
+  Ni 0.172151 0.344302 0.750000
+  Ni 0.344302 0.827849 0.250000
+  Ni 0.655698 0.172151 0.750000
+  Ni 0.827849 0.172151 0.250000
+  Ni 0.172151 0.827849 0.750000
+K_POINTS (automatic)
+  6 6 4   0 0 0

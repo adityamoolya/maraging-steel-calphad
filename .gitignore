@@ -5,3 +5,6 @@ dft/out/
 # Ignore Quantum ESPRESSO scratch files
 dft/outdir/
 dft/out/
+
+# Ignore pseudo files
+*.UPF

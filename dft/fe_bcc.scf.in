@@ -1,0 +1,28 @@
+&CONTROL
+  calculation  = 'scf',
+  prefix       = 'fe_bcc',
+  pseudo_dir   = './pseudo/',
+  outdir       = './outdir/'
+/
+&SYSTEM
+  ibrav       = 3,            ! 3 means BCC lattice
+  celldm(1)   = 5.41,         ! Lattice parameter for Fe (~2.86 Angstroms)
+  nat         = 1,            ! 1 atom in primitive BCC cell
+  ntyp        = 1,            
+  nspin       = 2,            ! Iron is magnetic! We MUST turn on spin polarization.
+  starting_magnetization(1) = 0.5,
+  ecutwfc     = 45.0,
+  ecutrho     = 360.0,
+  occupations = 'smearing',
+  smearing    = 'marzari-vanderbilt',
+  degauss     = 0.02
+/
+&ELECTRONS
+  conv_thr    = 1.0d-8
+/
+ATOMIC_SPECIES
+  Fe  55.845  Fe.pbe-spn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (alat)
+  Fe  0.0  0.0  0.0
+K_POINTS (automatic)
+  12 12 12   0 0 0
