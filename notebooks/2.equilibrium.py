@@ -36,7 +36,7 @@ print(f'pycalphad version: {__import__("pycalphad").__version__}')
 # In[2]:
 
 
-DB_PATH = '../databases/mc_fe_v2062_clean.tdb'
+DB_PATH = '../2databases/mc_fe_v2062_clean.tdb'
 db = Database(DB_PATH)
 
 assert 'ETA' in db.phases, 'ETA (Ni3Ti) phase not found'
