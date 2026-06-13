@@ -20,9 +20,12 @@ Use Density Functional Theory (DFT) formation energies to support CALPHAD modeli
 *   **Goal:** Calculate exact 0 K formation energies for the relevant phases from first principles to verify or correct the CALPHAD database.
 *   **Tool:** Quantum ESPRESSO (or similar DFT code).
 *   **Action Items:**
-    *   Set up unit cells for BCC Fe matrix, $\eta$-Ni₃Ti, and Fe₇Mo₂ (or relevant Mo-cluster structure).
+    *   Set up unit cells for BCC Fe matrix, $\eta$-Ni₃Ti, and Fe₇Mo₂ (or relevant Mo-cluster structure). (In Progress)
     *   Run structural relaxations and total energy calculations.
     *   Compare the DFT formation energies against the enthalpy values used in the CALPHAD `.tdb` file.
+*   **Crucial Notes:**
+    *   *Pseudopotential Mismatch Bug:* Initially, the $\Delta H_f$ computation yielded a severely unphysical value (+32.5 eV/atom). This was isolated to a pseudopotential library mismatch: Ni used the older `nd-rrkjus` library, while Ti used the newer `psl.1.0.0` library. As core electron references differ between libraries, mixing them breaks the $\Delta H_f$ cancellation.
+    *   *Fix:* All simulations are being rerun as `_v2` using exclusively `psl.1.0.0` pseudopotentials to ensure physically meaningful energy cancellation.
 
 ### Phase 3: Phase-Field Modeling (Optional / Stretch Goal)
 *   **Goal:** Simulate the spatial and temporal evolution of the precipitates to visually match the microscopy images from the paper.

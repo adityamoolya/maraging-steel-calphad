@@ -1,0 +1,28 @@
+&CONTROL
+  calculation  = 'scf',
+  prefix       = 'ni_bulk_v2',
+  pseudo_dir   = './pseudo/',
+  outdir       = './outdir/'
+/
+&SYSTEM
+  ibrav       = 2,            ! 2 means FCC lattice
+  celldm(1)   = 6.659,        ! Lattice parameter for Ni
+  nat         = 1,            ! Number of atoms
+  ntyp        = 1,            ! Number of types of atoms
+  nspin       = 2,            ! Ni is ferromagnetic
+  starting_magnetization(1) = 0.5,
+  ecutwfc     = 45.0,         ! Matched ecut with others
+  ecutrho     = 360.0,
+  occupations = 'smearing',   ! Smearing is required for metals
+  smearing    = 'marzari-vanderbilt',
+  degauss     = 0.02
+/
+&ELECTRONS
+  conv_thr    = 1.0d-8
+/
+ATOMIC_SPECIES
+  Ni  58.6934  Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (alat)
+  Ni  0.0  0.0  0.0
+K_POINTS (automatic)
+  12 12 12   0 0 0
