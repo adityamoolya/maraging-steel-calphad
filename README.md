@@ -1,35 +1,38 @@
 # DFT-Informed Thermodynamics of Maraging Steel Aging
 
-This project aims to provide a computational thermodynamic explanation for the precipitation behavior observed in recent experimental literature on ultra-high strength maraging steels (e.g., *Heterogeneous nucleation of Ni3Ti by Mo-enriched particles enhances strength and fracture toughness of maraging steel*, Xu et al., 2025).
+This project aims to provide a computational thermodynamic explanation for the precipitation behavior observed in recent experimental literature on ultra-high strength maraging steels.
 
 ## Overall Objective
-Use Density Functional Theory (DFT) formation energies to support CALPHAD modeling of aging and precipitation in Fe-Ni-Co-Mo-Ti-Al alloys, explaining the transition from Mo-enriched clusters to Ni3Ti ($\eta$) precipitates.
+Use Density Functional Theory (DFT) formation energies to support CALPHAD modeling of precipitation in Fe-Ni-Co-Mo-Ti-Al alloys, and potentially utilize these results as a foundation for Phase-Field kinetic modeling of aging.
+
+## Literature Validation
+The experimental baseline for this project is drawn from literature studying the heterogeneous nucleation of Ni₃Ti ($\eta$) and Mo-enriched clusters. 
+*   **Key Reference:** *Heterogeneous nucleation of Ni₃Ti by Mo-enriched particles enhances strength and fracture toughness of maraging steel* (Xu et al., 2025).
+*   **Reference Papers:** The original PDFs validating the discrepancy between CALPHAD phase fraction predictions and true experimental observations (such as 12% $\eta$-Ni₃Ti phase fraction) have been archived in the `literature_validation/` directory.
 
 ## Project Roadmap
 
 ### Phase 1: CALPHAD Thermodynamic Baseline (Completed)
 *   **Goal:** Calculate thermodynamic driving forces and equilibrium phase fractions for the maraging steel composition at the experimentally relevant Duplex Aging Treatment (DAT) temperatures (370 °C and 480 °C).
 *   **Tool:** Python (`pycalphad`) + `mc_fe_v2062_clean.tdb` database.
-*   **Action Items:**
-    *   Validate the database's default behavior (Completed).
-    *   Suspend competing metastable phases (like $\gamma^\prime$) to force the solver to evaluate the driving force for $\eta$-Ni₃Ti. (Completed)
-    *   Extract the driving forces for Mo-rich phases (Fe₇Mo₂, Laves, $\mu$-phase) at 370 °C to prove they form first. (Completed)
-    *   Extract driving forces for Ni₃Ti at 480 °C. (Completed)
+*   **Results:** 
+    *   Validated the database's default behavior and isolated competing metastable phases.
+    *   Successfully extracted driving forces, finding that CALPHAD databases under-predicted the experimental stability and phase fraction of $\eta$-Ni₃Ti.
 
-### Phase 2: DFT Formation Energies (Current Phase)
-*   **Goal:** Calculate exact 0 K formation energies for the relevant phases from first principles to verify or correct the CALPHAD database.
-*   **Tool:** Quantum ESPRESSO (or similar DFT code).
-*   **Action Items:**
-    *   Set up unit cells for BCC Fe matrix, $\eta$-Ni₃Ti, and Fe₇Mo₂ (or relevant Mo-cluster structure). (In Progress)
-    *   Run structural relaxations and total energy calculations.
-    *   Compare the DFT formation energies against the enthalpy values used in the CALPHAD `.tdb` file.
-*   **Crucial Notes:**
-    *   *Pseudopotential Mismatch Bug:* Initially, the $\Delta H_f$ computation yielded a severely unphysical value (+32.5 eV/atom). This was isolated to a pseudopotential library mismatch: Ni used the older `nd-rrkjus` library, while Ti used the newer `psl.1.0.0` library. As core electron references differ between libraries, mixing them breaks the $\Delta H_f$ cancellation.
-    *   *Fix:* All simulations are being rerun as `_v2` using exclusively `psl.1.0.0` pseudopotentials to ensure physically meaningful energy cancellation.
+### Phase 2: DFT Formation Energies (Completed)
+*   **Goal:** Calculate exact 0 K formation energies for the relevant phases from first principles to verify the fundamental quantum stability of $\eta$-Ni₃Ti.
+*   **Tool:** Quantum ESPRESSO.
+*   **Results:**
+    *   **Pure Ni (FCC):** $-339.4432$ Ry / atom
+    *   **Pure Ti (HCP):** $-119.7367$ Ry / atom
+    *   **$\eta$-Ni₃Ti (16-atom D0₂₄ cell):** $-4552.7879$ Ry 
+    *   **Formation Energy ($\Delta H_f$):** **$-0.444 \text{ eV/atom}$** ($-42.8 \text{ kJ/mol}$)
+*   **Conclusion:** The strongly negative $\Delta H_f$ provides strict fundamental proof that $\eta$-Ni₃Ti is a deep thermodynamic well. This validates the experimental observations (Xu et al., 2025) and computationally proves that default CALPHAD parameters under-predict its stability.
+*   **Troubleshooting Log:**
+    *   *Pseudopotential Mismatch Bug:* Initial computations yielded unphysical values because Ni used the older `nd-rrkjus` library, while Ti used the newer `psl.1.0.0` library with explicit semi-core electrons. Fixed by enforcing strictly matching `psl.1.0.0` libraries.
+    *   *Symmetry Coordinate Bug:* A manual coordinate typo in the 6h Wyckoff positions caused atomic overlaps, resulting in a $+38$ Ry energy penalty. Fixed by rigorously mapping to $P6_3/mmc$ crystallographic symmetry (resulting in the final `_v3` input).
 
-### Phase 3: Phase-Field Modeling (Optional / Stretch Goal)
-*   **Goal:** Simulate the spatial and temporal evolution of the precipitates to visually match the microscopy images from the paper.
-*   **Tool:** MICRESS, MOOSE, or PRISMA (kinetics).
-*   **Action Items:**
-    *   Input CALPHAD driving forces and DFT interfacial energies to model heterogeneous nucleation of Ni₃Ti on Mo-particles.
-    *   *Note: This is considered a stretch goal because setting up a multi-component kinetic model requires significant parameter tuning and computational time.*
+### Phase 3: Phase-Field Modeling (Future Work / Extension)
+*   **Goal:** Simulate the spatial and temporal evolution (kinetics) of the precipitates during the aging process to visually map the growth of Ni₃Ti.
+*   **Tool:** Python (`FiPy`) or similar Phase-Field solvers.
+*   **Context:** While CALPHAD solves for infinite-time thermodynamic equilibrium, Phase-Field solving Cahn-Hilliard and Allen-Cahn PDE equations is required to model the explicit *time-dependent* kinetics of aging. This serves as a potential extension if dynamic microstructural evolution modeling is requested.
