@@ -1,0 +1,28 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'ti_hcp'
+  outdir = './outdir/'
+  pseudo_dir = './pseudo/'
+/
+&SYSTEM
+  ibrav = 4
+  celldm(1) = 5.5775
+  celldm(3) = 1.5853
+  nat = 2
+  ntyp = 1
+  ecutwfc = 45.0
+  ecutrho = 360.0
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.02
+/
+&ELECTRONS
+  conv_thr = 1.0e-8
+/
+ATOMIC_SPECIES
+Ti  47.867  Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+Ti  0.333333  0.666667  0.250000
+Ti  0.666667  0.333333  0.750000
+K_POINTS automatic
+12 12 8 0 0 0

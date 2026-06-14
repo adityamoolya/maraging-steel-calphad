@@ -1,6 +1,6 @@
--&CONTROL
+&CONTROL
   calculation  = 'scf',
-  prefix       = 'ni3ti',
+  prefix       = 'ni3ti_v3',
   pseudo_dir   = './pseudo/',
   outdir       = './outdir/'
 /
@@ -18,10 +18,12 @@
 /
 &ELECTRONS
   conv_thr    = 1.0d-8
-  mixing_beta = 0.4         ! Lower mixing beta helps complex metals converge
+  mixing_beta = 0.1
+  mixing_mode = 'local-TF'
+  electron_maxstep = 200
 /
 ATOMIC_SPECIES
-  Ni  58.693  Ni.pbe-nd-rrkjus.UPF
+  Ni  58.693  Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
   Ti  47.867  Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
 ATOMIC_POSITIONS (crystal)
   Ti 0.000000 0.000000 0.000000
@@ -35,10 +37,10 @@ ATOMIC_POSITIONS (crystal)
   Ni 0.000000 0.500000 0.500000
   Ni 0.500000 0.500000 0.500000
   Ni 0.827849 0.655698 0.250000
-  Ni 0.172151 0.344302 0.750000
-  Ni 0.344302 0.827849 0.250000
-  Ni 0.655698 0.172151 0.750000
+  Ni 0.344302 0.172151 0.250000
   Ni 0.827849 0.172151 0.250000
+  Ni 0.172151 0.344302 0.750000
+  Ni 0.655698 0.827849 0.750000
   Ni 0.172151 0.827849 0.750000
 K_POINTS (automatic)
   6 6 4   0 0 0
