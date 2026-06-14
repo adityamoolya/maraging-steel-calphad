@@ -7,7 +7,8 @@
 4. [Phase 2: DFT Formation Energies](#phase-2-dft-formation-energies)
 5. [Phase 3: TODO / Future Goals](#phase-3-todo--future-goals)
 6. [Repository Structure](#repository-structure)
-7. [References](#references)
+7. [Reproduction](#reproduction)
+8. [References](#references)
 
 ## Project Overview
 This project aims to provide a computational thermodynamic explanation for the precipitation behavior observed in recent experimental literature on ultra-high strength maraging steels. Specifically, it uses Density Functional Theory (DFT) formation energies to support and correct CALPHAD modeling of precipitation in Fe-Ni-Co-Mo-Ti-Al alloys. The primary motivation is the experimental observation that maraging steels undergo heterogeneous nucleation of $\eta$-Ni₃Ti by Mo-enriched particles, reaching an experimental phase fraction of ~12% (Xu et al., 2025), which CALPHAD models historically fail to accurately predict.

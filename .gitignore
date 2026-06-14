@@ -8,3 +8,4 @@ dft/out/
 
 # Ignore pseudo files
 *.UPF
+.vscode
