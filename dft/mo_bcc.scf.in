@@ -1,0 +1,34 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'mo_bcc'
+  outdir = './outdir'
+  pseudo_dir = './pseudo/'
+  tstress = .true.
+  tprnfor = .true.
+  etot_conv_thr = 1.0d-4
+  forc_conv_thr = 1.0d-3
+/
+&SYSTEM
+  ibrav = 3
+  celldm(1) = 5.95
+  nat = 1
+  ntyp = 1
+  ecutwfc = 45
+  ecutrho = 360
+  occupations = 'smearing'
+  smearing = 'm-v'
+  degauss = 0.02
+  nspin = 1
+/
+&ELECTRONS
+  electron_maxstep = 200
+  conv_thr = 1.0d-6
+  mixing_beta = 0.3
+  mixing_mode = 'local-TF'
+/
+ATOMIC_SPECIES
+  Mo  95.95   Mo.pbe-spn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (crystal)
+  Mo 0.000000 0.000000 0.000000
+K_POINTS (automatic)
+  12 12 12 0 0 0

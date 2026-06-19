@@ -1,0 +1,1561 @@
+Materials Science & Engineering A 915 (2024) 147198
+
+Contents lists available at ScienceDirect
+
+Materials Science & Engineering A
+journal homepage: www.elsevier.com/locate/msea
+
+Evolution and strengthening of nanoprecipitates in a high strength
+maraging stainless steel
+Junpeng Li a, Weiguo Jiang a , Yang Zhang a , Liyuan Liu a , Yongzheng Yu a, Junhua Luan b,
+Zengbao Jiao c , Chain Tsuan Liu b, Zhongwu Zhang a,*
+a
+
+Key Laboratory of Superlight Materials and Surface Technology, Ministry of Education, College of Materials Science and Chemical Engineering, Harbin Engineering
+University, Harbin, 150001, China
+Inter-University 3D Atom Probe Tomography Unit, Department of Mechanical Engineering, City University of Hong Kong, Hong Kong, China
+c
+Department of Mechanical Engineering, Research Institute for Advanced Manufacturing, The Hong Kong Polytechnic University, Hong Kong, China
+b
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Maraging stainless steel
+High strength
+Microstructure evolution
+Precipitation strengthening
+Mechanical property
+
+A high strength maraging stainless steel (MSS) was developed utilizing multiple nanoprecipitates and reverted
+austenite. After aging treatment, this steel shows remarkable mechanical properties with a yield strength of
+~1750 MPa, a tensile strength of ~1910 MPa, and a total elongation of ~10.5 %. The precipitation and
+strengthening mechanisms of multiple nanoprecipitates were clarified. The precipitation sequence upon aging
+can be identified as: Ni-rich cluster→ Ni-rich cluster + Mo-rich cluster→ Ni3Ti + Mo-rich phase→ Ni3Ti + Morich phase + α′-Cr. Ni-rich cluster and Mo-rich cluster is the precursor of Ni3Ti and Mo-rich phase, respectively.
+The Ni-rich clusters, Mo-rich clusters, Ni3Ti and α′-Cr, contribute to the precipitation strengthening mainly by
+shearing mechanisms, among them the ordered strengthening plays the most significant role. Upon aging, Ni3Ti
+is wrapped by Mo-rich phase, restraining their growth. In contrast, the Mo-rich phase can be significantly
+coarsened, leading to a shift in the precipitation strengthening from dislocation shearing to Orowan looping
+mechanism. The reverted austenite improves the ductility of the MSS via a transformation induced plasticity
+(TRIP) effect.
+
+1. Introduction
+Maraging stainless steels (MSSs) with high strength, ductility and
+corrosion resistance are the backbone of innovations in manufacturing,
+energy, transportation, and safety, such as automotive engine housings,
+aircraft landing gears, and cryogenic missiles [1]. These excellent
+properties stem from the formation of a unique microstructure during
+the aging treatment: hierarchically arranged lath martensite with a high
+dislocation density and decorated by various nanoprecipitates and
+reverted austenite (RA) that re-precipitates from martensite [2,3]. The
+high dislocation density of the martensite matrix and the multiple
+nanoprecipitates provide the high strength of MSSs [2,4]. The RA con­
+tributes to the plasticity and toughness [5,6]. However, the complex
+interactions between alloying elements and the varying microstructure
+during aging tend to be difficult to achieve an excellent balance between
+strength and ductility in MSSs. In particular, coarse nanoprecipitates or
+severe grain boundary segregation of atoms can lead to brittle fracture
+
+[7,8]. Therefore, it is essential to deeply investigate the precipitation
+mechanism of nanoprecipitates during aging treatment.
+Much attentions have been paid to the relationship between nano­
+precipitates and mechanical properties, while the formation mechanism
+of nanoprecipitates during aging treatment is not well understood
+[9–11]. In MSSs, three types of nanoprecipitates can be formed during
+aging treatment, including Mo-rich, Ni3Ti, and Cr-rich nanoprecipitates,
+which significantly increased the strength [10]. The effect of alloying
+elements on the precipitation precipitation-hardened steels was inves­
+tigated by transmission electron microscopy (TEM), atom probe to­
+mography (APT) and first-principles calculations [12,13]. Tian et al.
+found that the addition of Co can provide stronger thermodynamic
+driving force to form Ni-Ti clusters in body-centered cubic (BCC) iron
+and promote the formation of Ni3Ti [12]. The effect of multiple alloying
+additions on the co-precipitation of Mo-rich, Ni3Ti and Cr-rich nano­
+precipitates was investigated by Niu et al. [13]. They found that Mo
+could enhance the chemical driving force and reduce the strain energy of
+
+* Corresponding author. Key Laboratory of Superlight Materials and Surface Technology, Ministry of Education, College of Materials Science and Chemical En­
+gineering, Harbin Engineering University, Harbin, China.
+E-mail address: zwzhang@hrbeu.edu.cn (Z. Zhang).
+https://doi.org/10.1016/j.msea.2024.147198
+Received 18 June 2024; Received in revised form 1 August 2024; Accepted 30 August 2024
+Available online 5 September 2024
+0921-5093/© 2024 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+nucleation of Ni3Ti, which promotes the formation of Ni3Ti. While Ti
+and Mo could consume Ni in the matrix, which reduces the tendency of
+spinodal decomposition for Cr and suppresses the precipitation of α′-Cr.
+However, many studies usually neglect the investigation of the precip­
+itation sequence mechanism during aging, which can significantly affect
+the strength of the steels. The evolution mechanism of nanoprecipitates
+in precipitation hardening steels through aging treatment process has an
+important effect on the mechanical properties [12,14–16]. For example,
+in maraging steels utilizing Cu and NiAl as nanoprecipitates, the ratio of
+Ni and Al influenced the precipitation sequence during aging treatment,
+resulting in significantly different mechanical properties [17,18].
+Exceeding the aging peak, the precipitates begin to coarsen, and Cu-rich
+precipitates with a 9R structure convert to face-centered cubic (FCC)
+structures [19], and the NiAl-type precipitates gradually convert to
+Ni2AlMn-type precipitates [20]. However, the precipitation sequence of
+Mo-rich, Ni3Ti, and Cr-rich nanoprecipitates in maraging stainless steels
+during aging is still not clear and requires further investigation to better
+understand the strengthening mechanism.
+Although precipitation strengthening can significantly increase the
+strength of steels, it often sacrifices ductility to a certain extent [14]. The
+phenomenon is a trade-off between strength and ductility [21–24]. To
+overcome this issue, researchers have tried to introduce the trans­
+formation induced plasticity (TRIP) effect of austenite to improve
+ductility [5,25,26]. In maraging steels, the aging treatment is also
+accompanied by RA re-precipitation [26,27]. Different insights are
+available on the formation mechanism of RA. The segregation of
+austenite stabilizing elements at grain boundaries, such as Ni and Mn,
+can reduce the Gibbs free energy of austenite and promote the formation
+of RA [28–30]. Heo et al. suggested that the RA was formed by the
+coherent strain at the interface between Ni3Ti and the matrix as a
+driving force through the climbing of the edge dislocations and the
+diffusion of Fe atoms [31]. Typically, the RA in MSS can effectively
+improve ductility [25,26]. However, how to introduce and better control
+the formation of nanoprecipitates in RA remains unknown and needs to
+be further explored.
+In the present work, an ultra-high strength MSS was developed uti­
+lizing multiple nanoprecipitates and RA. Microstructures at different
+length scales were characterized by electron backscatter diffraction
+(EBSD), TEM and APT. First principles calculations were also conducted
+to explain the mechanism of nanoprecipitates formation. The objective
+for this work is to examine the effect of aging on microstructural evo­
+lution and mechanical properties in order to elucidate the mechanisms
+of nanoprecipitation strengthening. Meanwhile, the mechanism of
+nanoprecipitate formation during aging treatment is also elaborated.
+
+5567 testing machine along the rolling direction of the samples with a
+strain rate of 10− 3 s− 1. Three specimens were tested in each case to
+ensure the repeatability. Dimensions of the flat dog bone shaped tensile
+tests are 12.5 mm, 3.8 mm and 2.0 mm in length, width and thickness,
+respectively. To clean up the scratches, the surfaces of the test samples
+were polished with 3000-grit SiC paper. A contacting Instron exten­
+someter was used to measure the strain within the sample gauge upon
+loading. The yield strength was determined using the 0.2 % offset plastic
+strain method.
+X-ray diffraction (XRD) measurements were carried out using a D/
+max-2550 X-ray diffractometer to characterize the phase composition.
+The instrument operated at 40 kV and 40 mA, utilizing Cu - Kα radiation
+with a sampling interval of 0.01◦ and a scanning rate of 1◦ /min. Volume
+fractions of the dual phase were calculated by the results of XRD. The
+detailed method has been reported in a previous work [4]. The dislo­
+cation density (ρ) was estimated from the XRD profile by Williamson
+Hall method as Eqs. (1) and (2) [32]:
+Δ2θ cos θ 0.9
+sin θ
+=
++ 2ε
+λ
+D
+λ
+
+ρ=
+
+√̅̅̅
+2 3ε
+Db
+
+(1)
+(2)
+
+where λ is the X-ray wave length (λ = 0.154 nm), D is an apparent
+crystallite size, and ε is a lattice strain. b is the magnitude of the Burgers
+vector, which is 0.248 nm for iron [33]. The four diffraction peaks of
+martensite were record for (110), (200), (211) and (220). To accurately
+and quantitatively evaluate the dislocation density by XRD, the refer­
+ence samples were subjected to stress relief by holding at 1050 ◦ C for 20
+h.
+EBSD measurements were carried out using a SEM (Hitachi S3400)
+equipped with an HKL Channel 5 software. EBSD specimens were me­
+chanically polished and then ion-beam polished.
+TEM observations and selected area electron diffraction (SAED) were
+conducted on a JEM 2100F microscope operated at 200 kV. High-angle
+annular dark field scanning transmission electron microscope (HAADFSTEM) and STEM-energy dispersive X-ray (STEM-EDX) observations
+were carried out on an aberration-corrected Titan G260-300 microscope
+operated at 300 kV. Thin TEM/STEM foils were prepared by lift-outs in
+an FEI Scios focused ion beam (FIB) equipped in SEM.
+Needle-shaped specimens for APT were fabricated by lift-outs and
+were annular milled using FIB [34]. APT characterization was per­
+formed in a local electrode atom probe (CAMEACA LEAP 5000 XR).
+Specimens were analyzed in voltage mode at 70 K with a pulse repetition
+rate of 200 kHz, a pulse fraction of 20 %, and an atomic evaporation
+detection rate of 0.3 % per pulse. The Imago Visualization and Analysis
+Software (IVAS) version 3.8 was used to create 3D reconstructions and
+data analysis.
+Through first principles calculations, atom occupancy and formation
+energies of multicomponent nanoprecipitates with different structures
+were investigated using the Cambridge Sequential Total Energy Package
+(CASTEP) module of the Materials Studio 8.0 software package with the
+generalized gradient approximation (GGA) function of Perdew-BurkeErnzerh (PBE). To make the formation energies comparable, BCC
+structures were constructed to determine the total energy of each cell.
+The cut-off plane-wave energies of BCC Fe was fixed at 320 eV. The kpoint lattices of the 2-atom BCC Fe as 2 × 2 × 2. The calculations
+considered the magnetic properties. Meanwhile, both the ionic and
+lattice parameters were allowed to be fully relaxed.
+
+2. Experimental methods
+The MSS with a nominal composition of Fe-11.0Cr-4.0Co-8.0Ni0.5Ti-5.0Mo-0.1Si-0.002C (wt.%) was designed and fabricated. Alloy
+rods, weighing approximately 500 g, were fabricated from constituent
+elements (>99.95 at.% purity) by arc melting in an argon atmosphere on
+a water-cooled copper vessel. Prior to alloy melting, the furnace cham­
+ber was evacuated, flushed and backfilled with high purity argon. The
+alloy rods were remelted at least five times to ensure the homogeneity
+and dropped into a copper mold with dimensions of Φ 20 mm × 200
+mm.
+The as-cast ingots were hot-rolled at 1200 ◦ C from 20 to 2 mm in
+thickness, followed by water quenching. The specimens were solid so­
+lution treated at 1050 ◦ C for 1 h and quenched in ice-water mixture,
+followed by cryogenic treatment in liquid nitrogen for 8 h in order to
+obtain single-phase martensite (labeled as ST). The sheets were then
+aged at 480 ◦ C for 15, 30 (labeled as SA30), 120, 300 (labeled as SA300),
+3,000, 12,000 and 30,000 min (labeled as SA30000), respectively.
+Hardness measurements were conducted using a Rockwell tester
+with a load of 500 g for 15 s. At least ten indentations were measured to
+obtain an average value. Tensile tests were performed with an Instron
+
+3. Result
+3.1. Mechanical properties
+Fig. 1 (a) shows the variation of hardness with aging time for the
+
+2
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 1. Mechanical properties for MSS aged at 480 ◦ C for various times. (a) The hardness evolution of MSS, and (b) engineering stress-strain curve of MSS, where ST
+stands for solution-treated MSS.
+
+developed MSS. The hardness increases from ~34.1 to ~48.2 HRC
+within the initial 15 min and gradually reaches a maximum of ~56.1
+HRC at 12,000 min. Subsequently, the hardness begins to decrease with
+further increase in aging time owing to the over-aging effect.
+Ambient temperature tensile tests were carried out to further study
+the mechanical properties after the solution and aging treatments. The
+engineering stress–strain curves are presented in Fig. 1 (b). ST MSS
+
+shows a yield strength (YS) of 850 MPa, a tensile strength (TS) of 1100
+MPa and a total elongation (TE) of 12.4 %. After aging for 300 min, the
+YS increases to 1350 MPa and TS reaches 1510 MPa. Extending the
+aging time to 30,000 min, the YS increases to 1750 MPa, and the TS
+reaches up to 1910 MPa. At the same time, there is no significant
+compromise in TE. Notably, the MSS retains high strength and consid­
+erable plasticity even in over-aged conditions.
+
+Fig. 2. Characterizations of the matrix microstructure at different aging states. Orientation mappings, equivalent effective grain size distribution and phase dis­
+tribution maps of (a), (a1) and (a2) for ST MSS, (b), (b1) and (b2) for SA300 MSS, (c), (c1) and (c2) for SA3000 MSS and (d), (d1) and (d2) for SA30000 MSS. (e) XRD
+patterns of ST, SA30, SA300, SA3000, SA30000 MSS and SA30000 MSS vicinity of the fracture. (f) The Williamson-Hall curve of martensite. (g) Dislocation density
+histograms for different aging states.
+3
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+3.2. Matrix microstructural characterization
+
+Mo-rich phase with a hexagonal structure, which agrees with the results
+in the literatures [41]. The orientation relationship between the Mo-rich
+phase and martensite matrix is (0001)Mo//(01 1)M and [01 1 0]Mo//[1
+11]M. The δ is evaluated to be about 0.11 and 0.12 based on the HRTEM
+results. In MSS, the spinodal decomposition of Cr forms the α′-Cr phase
+[42]. The α′-Cr phase usually possesses a BCC structure and remains
+coherent with the matrix [13].
+
+Fig. 2 displays the microstructure of the matrix at different aging
+states. The ST, SA300, SA3000 and SA30000 MSSs possess a typical
+martensite hierarchical microstructure. The orientation mappings with
+low (2–15◦ ) and high angle (>15◦ ) grain boundaries (HAGBs) of ST,
+SA300 and SA30000 MSS obtained by EBSD are shown in Fig. 2(a–d).
+HAGBs can serve as boundaries separating crystalline regions to form
+equivalent effective grains [35,36]. Fig. 2 (a1-d1) display the statistics
+distribution of martensite equivalent effective grain dimensions. The
+mean equivalent effective grain dimensions of the ST, SA300, SA3000
+and SA30000 MSS are ~5.1, ~5.6, ~5.6 and ~5.8 μm, respectively. It is
+found that no significant change in grain dimensions was observed
+before and after aging. Fig. 2 (a2-d2) show the phase distribution map
+for the MSSs. The matrix of the ST, SA30, SA300 and SA3000 MSS is
+composed fully of martensite. The matrix of the SA30000 MSS consists
+of dual martensite and austenite phases, where the volume fraction of
+austenite is 17.5 %. The austenite distributes homogeneously in the
+matrix.
+The XRD results show that in the ST, SA30, SA300 and SA3000 MSSs,
+the matrix consists of single-phase martensite, as shown in Fig. 2 (e).
+However, the matrix of SA30000 MSS consists of dual martensite and
+austenite phases, where the volume fraction of austenite is 15.5 ± 3.2 %.
+It is consistent with the EBSD observation. XRD results show that no
+austenite peaks can be detected before aging for 3000 min. Only after
+aging for 30,000 min can the austenite be detected, indicating that the
+formation of RA is a slow process and depending on aging time. As no
+austenite is observed after ST (i.e., residual austenite), this austenite can
+be identified as RA, which is very common in maraging steels [37]. After
+deformation, the austenite (111) peak in the XRD pattern from SA30000
+MSS disappeared (Fig. 2 e), indicating that the RA transformed to
+martensite. This suggests that the TRIP effect occurred during defor­
+mation. Fig. 2 (f) shows Williamson-Hall plots. With increasing aging
+time, the slop of fitted lines becomes smaller. Fig. 2 (g) demonstrates the
+dislocation density of MSS in different aged conditions. The dislocation
+density of MSS is ~6.21, ~6.13, ~6.01, ~5.95 and ~5.72 × 1014 m− 2,
+respectively, which is consistent with that of maraging steels [38,39].
+This implies that aging treatment does not affect the dislocation density
+of the matrix.
+Fig. 3 (a) and (a1) demonstrate that the matrix comprises martensite
+laths with a high dislocation density in the ST MSS. No additional re­
+flections are detected in the SAED pattern along the [001]M direction,
+indicating that no nanoprecipitate exists in this state. After aging for
+300 min, the matrix remains lath martensite with a high dislocation
+density, and nanoprecipitates are found in the SAED pattern along the
+[011]M direction, as shown in Fig. 3(b), Fig. 3 (b1) and Fig. 3 (b2).
+Simultaneously, rod-like Ni3Ti and ellipsoidal Mo-rich phase were
+observed in the lath. With increasing aging time, rod-like Ni3Ti and
+ellipsoidal Mo-rich phase grow up, as shown in Fig. 3(c)–Fig. 3 (c1) and
+Fig. 3 (c2). These rod-shaped Ni3Ti precipitates are generally smaller
+than 10 nm in length and 3 nm in width. Meanwhile, film-like RAs along
+the lath boundary and blocky RAs are also observed. Fig. 3 (c3) dem­
+onstrates that the RA and matrix possess an N-W orientation relation­
+ship: (111)γ//(011)M, and [110]γ//[100] M. In MSS, it is common for
+both the austenite and martensite to exhibit K-S and N-W orientation
+relationships [1]. Fig. 4 demonstrates that no elements are segregated in
+RA. This indicates that RA does not contain nanoprecipitates. HRTEM of
+the nanoprecipitates is shown in Fig. 5(a) and (b). The fast Fourier
+transform (FFT) patterns of Fig. 5 (a1) and (b1) demonstrate the nano­
+precipitates possess the η-Ni3Ti structure. The orientation relationship
+between the Ni3Ti phase and martensite matrix is (0004)η//(11 0)M and
+[1 2 10]η//[001]M. The lattice mismatch between the matrix and η-Ni3Ti
+|ap − 2am |
+phase can be described as δ = 1a +a , where α refers to the lattice
+2 p
+
+3.3. Characterization of nanoprecipitates
+APT was employed to gain further characterization for the evolution
+of the various precipitates. All atoms are uniformly distributed in the
+matrix after ST, as shown in Fig. 6 (a). Aging for 30 min, the enrichment
+of Ni and Ti is observed and Ni-rich cluster are formed, as shown in Fig. 6
+(b). These Ni-rich cluster are the precursor phase of Ni3Ti during the
+aging process [12]. When the aging time is extended to 300 min, the
+enrichment of Mo is found in Fig. 6 (c), forming Mo-rich clusters. Further
+aging to 3000 min, the Ni-rich and Mo-rich clusters gradually grow into
+nanoprecipitates, as shown in Fig. 6 (d). Interestingly, after aging at
+480 ◦ C for 30,000 min, further enrichment of Cr is observed with the
+formation of α′-Cr, as shown in Fig. 6 (e). In MSS, the spinodal decom­
+position of Cr forms the α′-Cr [42]. The α′-Cr phase usually possesses a
+BCC structure and remains coherent with the matrix [13].
+The evolution of the nanoprecipitates were observed by APT at
+different aging conditions, as shown Fig. 7(a–d). In the early stage of
+aging, only Ni-rich clusters are present, while Mo-rich and α′-Cr phases
+gradually appear with the increasing aging time. Fig. 7 (a1-d3) show the
+change in the center composition of the nanoprecipitates and matrix at
+different aging conditions. Ultimately, the Mo-rich and α′-Cr phase
+coarsen, as shown in Fig. 7, which is consistent with the previous studies
+[14,43,44]. It can be found that the concentrations of Ni and Ti in
+Ni-rich cluster cores gradually increase, while the concentrations of Fe,
+Co, Mo and Cr gradually decrease. Finally, the ratio of Ni to Ti in the
+cluster cores approaches 3:1 and reaches a stable state, forming the
+hexagonal structure Ni3Ti. Typically, MSS with a high dislocation den­
+sity after solution treatment leads to the formation of Ni-rich cluster by
+the diffusion of atoms along the dislocation lines during the early stages
+of aging [33,45]. Fig. 7 (a) displays that Ni-rich cluster are precipitated
+uniformly with a considerable number density. The matrix possessing
+high dislocation density allows for the prevalence of continuous pre­
+cipitation in the matrix. During plastic deformation, additional energy
+from the anti-phase boundary is demanded by the dislocations shearing
+these nanoprecipitates, which is the major factor for increasing the
+strength at the early aging [45].
+The Ni-rich cluster formed at the beginning of aging can serve as
+heterogeneous nucleation sites for the Mo-rich and α′-Cr phase. As the
+aging time increasing, some of the Mo-rich and α′-Cr phase form adja­
+cently to the Ni-rich cluster, as shown in Fig. 7(a–d). At the same time,
+the exclusion of the core atoms of Ni-rich cluster also promotes the
+heterogeneous nucleation of Mo-rich and α′-Cr phase. The nano­
+precipitates possessing different shapes can be approximately trans­
+formed into spheres of identical volume phases with an equivalent
+radius [46]. The volume fraction of the nanoprecipitates was estimated
+by f = 4/3πr3N, where r and N are the nanoprecipitates radius and
+number density, respectively. Table 1 shows the equivalent radius and
+number density of the nanoprecipitates at different aging conditions.
+Increasing the aging time from 30 to 3000 min increased the size of the
+Ni-rich cluster from 1.21 to 3.79 nm. While from 3000 to 30,000 min,
+the Ni3Ti did not coarsen significantly. Because the Mo-rich phase
+wrapped around Ni3Ti, which inhibits the coarsening of Ni3Ti
+(Fig. 7b–d). The above-mentioned Ni-rich and Mo-rich clusters are the
+precursor of Ni3Ti and Mo-rich phases, respectively. The chemical
+compositions and equivalent radii of the Ni-rich clusters and Mo-rich
+clusters are 30.7Fe-5.6Co-38.5Ni-10.7Ti-5.3Mo-8.8Cr-0.4Si with 0.95
+nm and 51.6Fe-2.2Co-11.5Ni-0.6Ti-21.2Mo-10.8Cr-2.1Si with 1.47 nm,
+
+m
+
+parameter of each phase [40]. The δ is evaluated to be about 0.03 and
+0.04 based on the HRTEM results. Fig. 5 (a2) and (b2) demonstrates the
+
+4
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 3. Bright-field TEM images of (a) ST MSS, (b) SA300 MSS and (c) SA30000 MSS. (a1), (b1), (c1) and (c3) correspond to SEAD in the figures. Dark-field TEM
+images of (b2) SA300 MSS and (c2) SA30000 MSS. Green denote Ni3Ti, red denote Mo-rich phase and yellow arrows denote RA. (For interpretation of the references
+to colour in this figure legend, the reader is referred to the Web version of this article.)
+
+5
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 4. (a) BF-TEM of RA in SA30000 MSS. (b) SAED of RA and matrix, (c) STEM-HAADF image of yellow dashed frame in (a), (c1-c8) STEM-EDX elemental
+distribution maps. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+
+respectively. Due to the high dislocation density in the quenched matrix,
+clusters are formed by diffusion along the dislocation lines during aging
+[47]. High number density of Ni-rich and Mo rich clusters form uni­
+formly, coherent with the matrix. The clusters grow up to form Ni3Ti
+with D024 structure and Mo-rich phase with hexagonal structure. Their
+compositions are 1.4Fe-1.0Co-72.4Ni-23.8Ti-0.3Mo-1.0Cr-0.1Si and
+33.5Fe-1.2Co-13.6Ni-0.3Ti-28.9Mo-18.9Cr-3.6Si with sizes 3.89 nm and
+8.02 nm, respectively. These nanoprecipitates effectively improve the
+strength of the matrix through the precipitate shearing or Orowan
+looping mechanism. The change in precipitation sequence with
+increasing aging time is the primary contributor for the variation in
+strength increment.
+
+III for three substitution atoms, M − IV and M − V for five substitution
+atoms and M − VI for nine substitution atoms.
+The tendency of different substitutional atom X can be expressed by
+Eq. (3):
+(
+)/
+Total,X
+M
+128
+(3)
+ΔEX−
+cluster/disperse = E(M,128− M) − M × μX − (128 − M) × μFe
+where ETotal,X
+(M,128− M) represents the total energy of the supercell with M
+
+substitutional atoms (X). μX and μFe are the chemical potentials of the
+substitutional atoms and Fe, respectively, which were computed by
+presuming the identical cell symmetry.
+To identify whether X in Fe-Co-X alloys prefers to be dispersed or
+clustered in the system, Fig. 8 (c) shows the cluster formation energy
+versus the X concentration. Fig. 8 (c) clearly shows that in the alloy
+system of Fe-Co-X, the evaluated ΔE reduces with the increasing con­
+centration of the substituted atoms, regardless of the distribution the
+atoms.
+2
+Ni− 2
+For Ni, when there are two atoms in the system, ΔENi−
+disperse < ΔEcluster ,
+which means that the two Ni atoms tend to be dispersedly distributed.
+3
+When the number of Ni atoms in the system increases to three, ΔENi−
+disperse
+
+4. Discussions
+4.1. Precipitation mechanism
+The APT results after solution treatment showed that Fe, Co, Ni, Ti,
+Mo, Cr, and Si were homogeneously distributed without any enrichment
+(Fig. 6). However, after aging at 480 ◦ C, Ni, Ti, Mo, Si and Cr atoms
+become significantly enriched, forming Ni3Ti, Mo-rich and α′-Cr phases,
+respectively (Fig. 6). The appearance of these nanoprecipitates follows a
+certain precipitation sequence. Initially, Ni-rich clusters are formed. The
+Mo-rich clusters appear with the increased aging time, and these Morich clusters prefer heterogeneous nucleation at interfaces between the
+Ni-rich cluster and matrix. That is consistent with the findings for others
+[10,45,48]. The reason is that Ni, Ti and Mo possess different diffusion
+rates in α-Fe [49–52]. Meanwhile, the Ni-Ti precipitates cores expel Fe,
+Co, Mo and Cr atoms and gradually form a stable Ni3Ti phase (Fig. 7).
+With further prolonged aging time, the α′-Cr phase nucleates and grows.
+The matrix shows the coexistence of Ni3Ti, Mo-rich and α′-Cr phases. It is
+the precipitation sequence of the nanoprecipitates that leads to different
+precipitation strengthening effects at different aging stages (Fig. 1).
+Studies on the precipitation mechanism of MSS tend to focus on the
+characteristics of the nanoprecipitates at peak aging, while ignoring the
+sequence of the nanoprecipitates [53–55]. The nanoprecipitates at
+different aging time plays a very important role in controlling the me­
+chanical properties [55,56]. It is reported that the effect of Co on the
+strength in maraging steels is extremely important [12]. The addition of
+Co promotes the nucleation of nanoprecipitates and further increases the
+number density of nanoprecipitates, thus enhancing the precipitation
+hardening effect [42,57]. The results of APT show a random distribution
+of Co atoms in the matrix (Fig. 6). Therefore, Fe-Co-based alloys with
+randomly distributed Co were used in the first-principles calculation.
+To explore the precipitation sequence of MSS, first-principles
+calculation was utilized to investigate the distribution of different con­
+tents of X (Ni, Mo or Cr atoms) in Fe-Co-X alloys. Fig. 8 shows two
+tendencies of X distribution in the Fe-Co-X alloy system, forming pre­
+cipitates (Fig. 8 a) and dispersed distribution (Fig. 8 b). Table 2 shows
+the calculated details of the alternative atoms X (Ni, Mo and Cr)
+preferring cluster or disperse distribution in different alloy systems. M-I
+shows the distribution tendency for two substitution atoms, M-II and M-
+
+3
+> ΔENi−
+cluster , this means that three Ni atoms tend to gather into a cluster.
+With the increasing number of Ni atoms in the system, the formation
+energy of dispersed distribution is always larger than that of cluster
+distribution, which means that Ni atoms prefer to be clustered when the
+number of Ni atoms in the system is higher than three. For Mo, when the
+2
+Mo− 2
+Mo− 3
+system contains two or three Mo atoms, ΔEMo−
+disperse < ΔEcluster and ΔEdisperse
+3
+< ΔEMo−
+cluster , which indicates that Mo tends to be dispersedly distributed.
+5
+When the number of Mo atoms in the system increases to five, ΔEMo−
+disperse >
+5
+ΔEMo−
+cluster . In this case, the Mo atoms prefer to be distributed as a cluster. In
+the case of Cr, until the number of Cr atoms in the system reaches 9,
+9
+Cr− 9
+ΔECr−
+disperse > ΔEcluster , suggesting that chromium atoms are more inclined
+
+to form clusters. This result coincides well to the miscibility gap in the
+
+α-phase for Fe-Cr-Co alloys [12]. This also explains why multiple
+
+nanoprecipitates appear in this alloy system. These types of nano­
+precipitates are also present in other Ni-Mo-Cr-Ti system MSSs and
+effective in enhancing the precipitation strengthening effects [12].
+At the same time, comparing the minimum number of atoms
+required for cluster distribution and the formation energy, the system
+requires 3 atoms for Ni, 5 atoms for Mo and 9 atoms for Cr for forming
+3
+Mo− 5
+Cr− 9
+clusters, and ΔENi−
+cluster <ΔEcluster <ΔEcluster . It can be found that Ni requires
+the lowest number of atoms and the lowest formation energy when
+distributed in clusters, while Cr requires the highest number of atoms
+and the highest formation energy. This leads to a certain precipitation
+sequence during aging, with Ni-rich clusters precipitation first, then Morich nanoprecipitates, and finally Cr-rich nanoprecipitates.
+The number of atoms in the cluster and the interatomic distance
+affect the stability of the cluster structure. Bake et al. found that
+increasing the number of atoms in the cluster raises the stability of the
+cluster and facilitates the formation of clusters [58]. Kong et al. found
+that smaller interatomic distance in the clusters improves the stability of
+
+6
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 5. HRTEM of (a) SA3000 MSS and (b) SA30000 MSS. FFT of (a1) Ni3Ti in SA3000 MSS, (a2) Mo-rich phase in SA3000 MSS, (b1) Ni3Ti in SA30000 MSS and (b2)
+Mo-rich phase in SA30000 MSS. White dashed frames denote the locations of FFT.
+
+the clusters [59]. In the M − IV model, the average atom distance of the
+clusters (2.47 Å) is lower than that of the dispersed model (4.9 Å). This
+will increase the stability of the clusters, resulting in a lower formation
+energy of the cluster structure.
+At the beginning of aging, no Mo-rich and Cr-rich nanoprecipitates
+are found due to the high formation energy for clusters and the low
+
+diffusion coefficient of Mo and Cr [49–51]. Therefore, only Ni-rich
+cluster is formed, as shown in Fig. 7 (a). The atomic ratio of Ni to Ti
+in the Ni-rich cluster gradually approaches 3:1, and reaches a stable
+condition to form Ni3Ti. The formation energy of cluster distribution for
+Mo atoms is lower than that of Cr atoms. At this time, the interface
+between Ni3Ti and the matrix acts as a heterogeneous nucleation site.
+7
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 6. 3-D atom distribution patterns of (a) ST MSS, (b) SA30 MSS, (c) SA300 MSS, (d) SA3000 MSS and (e) SA30000 MSS.
+
+8
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+(caption on next page)
+
+9
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+Fig. 7. Typical APT reconstruction of nanoprecipitates in (a) SA30 MSS (b) SA300 MSS (c) SA3000 MSS and (d) SA30000 MSS. Reconstruction iso-concentration
+interfaces plotted by 35 % Ni (green surfaces), 25 % Cr (pink surfaces) and 15 % Mo (red surfaces). (a1) to (d3) are the corresponding one-dimensional concen­
+tration plots via the selected regions marked in a, b, c and d, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to
+the Web version of this article.)
+
+is the strengthening constant that relates to atom i [61,62]. The βi values
+are obtained in the previous studies [2], as shown in Table 3. The βi
+values of different elements are considerably different. As the aging time
+increases, the nanoprecipitate forming elements gradually segregate,
+which causes a decrease of the concentration of nanoprecipitate forming
+elements in the matrix. This significantly weakens the solid solution
+strengthening effect. The reduction is derived from the mass equilibrium
+equation, where the solute concentration xi,α in the matrix is denoted by
+Eq. (7) [62].
+∑
+xi −
+xi,j fj
+j
+∑
+xi,α =
+(7)
+1−
+fj
+
+Table 1
+Equivalent radii (nm), number densities (1023 m− 3), and volume fractions of the
+nanoprecipitates at different aging conditions.
+aging time
+30 min
+300 min
+
+3000 min
+30,000
+min
+
+Ni-rich
+cluster
+Ni-rich
+cluster
+Mo-rich
+cluster
+Ni3Ti
+Mo-rich
+phase
+Ni3Ti
+Mo-rich
+phase
+α′-Cr
+
+equivalent
+radius
+
+number
+density
+
+volume
+fraction
+
+0.95 ± 0.31
+
+60.56 ± 0.98
+
+3.12 ± 0.91
+
+1.11 ± 0.53
+
+50.12 ± 0.97
+
+3.81 ± 1.11
+
+1.47 ± 2.15
+
+2.01 ± 0.12
+
+2.57 ± 1.51
+
+3.43 ± 1.86
+6.81 ± 1.93
+
+4.71 ± 0.89
+0.71 ± 0.47
+
+4.37 ± 0.73
+8.56 ± 1.13
+
+3.89 ± 1.91
+8.02 ± 2.45
+
+5.13 ± 1.27
+0.53 ± 0.27
+
+5.46 ± 1.21
+11.63 ± 2.27
+
+1.53 ± 0.42
+
+1.57 ± 0.37
+
+1.81 ± 0.34
+
+j
+
+where fj is the proportion of nanoprecipitates, j and xi,j are the balanced
+content of atom i in j, respectively. In order to make the measurement
+simpler, the atom proportion of the substitution atom i in the matrix
+during aging obtained using the APT results as shown in Fig. 7.
+The strengthening of lath martensite σMart and solid solution
+strengthening σ SS are shown in Fig. 9. Both show a decreasing trend with
+increasing aging time. The σ Mart is reduced owing to a slight increase in
+grain size and a decrease in dislocation density after long-time aging.
+The reason for the decrease in σSS is that the precipitation of nano­
+precipitates depletes the nanoprecipitate-forming elements in the ma­
+trix. However, the yield strength still increases considerably. This
+indicates that the strength increment in σY is mainly contributed by
+precipitation strengthening σP .
+The strength increment from the nanoprecipitates is contributed
+either by dislocation shearing or bypassing (Orowan mechanism), which
+has been extensively described in many previous reports [14,15,18,36,
+63].
+For the shearing mechanism, three primary components contributing
+to the YS increment are coherency strengthening (Δσcoherency ), modulus
+mismatch strengthening (Δσ mudulus ) and order strengthening (Δσ orders )
+[16]. The equations for evaluating the strength increments caused by the
+dislocation shearing mechanisms are as follows:
+
+Meanwhile, Mo-rich phase are also formed due to the enrichment of Mo
+atoms in the matrix. With further extension of aging time, Ni3Ti becomes
+stable with no significant size growth. The Mo-rich phase grow, and
+some precipitates grow sharply to form large-sized spheres at different
+locations. Meanwhile, the α′-Cr also appear, mainly distributing at the
+interface between the Ni3Ti and matrix.
+4.2. Strengthening mechanisms
+There are three contributors to the yield strength of maraging steels
+[38]: (1) strength contribution of the lath martensite, σ Mart , (2) solid
+solution strengthening, σ SS , and (3) precipitation strengthening of some
+intermetallic compounds, σP . In the current MSS, RA is observed after
+long-time aging (Fig. 3). However, the strength increment remains a
+high level in spite of the presence of RAs. It is reported that RAs have
+almost no contribution on the strength of the steel [2,3]. Therefore, the
+YS σY of the MSS can be expressed as Eq. [3]:
+
+σ Y = σ Mart + σss + σ p
+
+(4)
+
+Δσcoherency = 4.1MGε3/2 f 1/2
+
+The strength of the martensite matrix relies on dislocation density and
+grain dimension. The block size is employed as the effective grain size in
+martensite. Grain boundary strengthening is represented by the HallPetch equation for dBlock [38], while the Taylor equation takes into ac­
+count the effect of the change in the dislocation density on the
+strengthening contribution. The σ Mart can be expressed by Eq. (5), which
+includes grain boundary strengthening, σ gb , and dislocation strength­
+ening , σ d :
+300
+√̅̅
+σ Mart = √̅̅̅̅̅̅̅̅̅̅ + 0.25Mμb ρ
+dbolck
+
+( r )1/2
+b
+
+Δσmodulus = 0.0055M(ΔG)3/2
+
+Δσorder = M
+
+( )1/2 ( )3m − 1
+2f
+r 2
+G
+b
+
+( 3/2 )(
+)1/2
+γapb
+4rs f
+b
+
+πT
+
+(8)
+(9)
+
+(10)
+
+where M = 2.5 is the Taylor factor for BCC metals in tension [38], ε = 2|
+(ap - am)/(am + ap)| is the constrained lattice parameter mismatch [40],
+m = 0.85 is a constant [60], r is the precipitate radius (Table 1),
+rs=(2/3)1/2r is the mean precipitate radius in the glide plane, and f is the
+volume fraction of precipitates (Table 1). ΔG = |G - Gp| is the modulus
+difference between the precipitates and matrix, where Gp is the shear
+modulus of precipitates (55 GPa for Ni3Ti [64], 55 GPa for the Mo-rich
+phase [65], and 63 GPa for the α′-Cr phase [66]). γapb is the anti-phase
+boundary energy of precipitates (0.52 J/m2 for Ni3Ti [67], 0.34 J/m2
+for the Mo-rich phase [65], and 0.38 J/m2 for the α′-Cr phase [66]). Γ =
+Gb2/2 is the line tension of the dislocations [68], and v = 0.3 is the
+Poisson ratio [13].
+The YS increment (ΔσOrowan ) from the Orowan looping mechanism is
+expressed as [69]:
+
+(5)
+
+where M = 2.5 is the Taylor orientation factor [16], ρ is the density of
+dislocations in the martensite matrix, b = 0.28 nm is the Burgers vector,
+and μ = 71 GPa is the shear modulus [15]. The values of dBlock and ρ can
+be obtained from Fig. 2.
+The solid solution strengthening σ SS is derived from the Fleischer’s in
+Eq. (6), which estimates the increase of critical resolved shear stress
+owing to displacing atoms [60].
+∑(
+)0.5
+β2i xi,α
+σ ss =
+(6)
+i
+
+where xi,α is the proportion of solid solution atoms i in the matrix and βi
+10
+
+Materials Science & Engineering A 915 (2024) 147198
+
+J. Li et al.
+
+Fig. 8. Atom positions of Co and Fe in (a) System A and (b) System B. Substitutional atoms marked as 1 to 9 replace Fe at the numbered sites. System A was used to
+evaluate the first nearest neighbors of atoms interactions. System B was used to evaluate configuration with remote atoms positions. (c) Diagram of the formation
+energy of Ni-rich, Mo-rich and Cr-rich nanoprecipitates at dispersed and clustered distribution conditions.
+Table 2
+Detailed distribution of atoms for each system employed in the calculation.
+Distribution
+
+Preference of alternative
+atoms (Ni, Mo or Cr) to be
+dispersed or clustered
+with Co
+
+Model
+
+M-I
+M-II
+M-III
+M-IV
+M-V
+M-VI
+
+Table 3
+Solid solution strengthening constants [2].
+
+Systems
+
+Element
+
+Ni
+
+Cr
+
+Ti
+
+Mo
+
+Co
+
+Si
+
+(Ni atoms as an example, Mo and Cr atoms
+are arranged in the same way)
+
+βi (MPa/at.)
+
+708
+
+622
+
+2628
+
+2362
+
+334
+
+732
+
+A (cluster)
+Fe122Co4Ni2
+(Sites 1 and 2)
+Fe121Co4Ni3
+(Sites 1, 2 and 8)
+Fe121Co43Ni3
+(Sites 1, 4 and 5)
+Fe123Ni5 (Sites 1
+to 5)
+Fe123Ni5 (Sites 1,
+2, 3, 8 and 9)
+Fe115Co4Ni9
+(Sites 1 to 8)
+
+B (dispersed)
+Fe122Co4Ni2
+(Sites 1 and 9)
+Fe121Co4Ni3
+(Sites 1, 8 and 9)
+Fe121Co4Ni3
+(Sites 1, 5 and 8)
+Fe123Ni5 (Sites 1,
+3, 5, 7 and 9)
+Fe123Ni5 (Sites 1,
+6, 7, 8 and 9)
+Fe115Co4Ni9
+(Sites 1 to 9)
+
+(
+)
+0.4Gb 1
+2rs f
+ΔσOrowan = M √̅̅̅̅̅̅̅̅̅̅̅ ln
+b
+π 1− v L
+
+(11)
+
+where L = 2rs(π /4f-1)1/2 is the surface-to-surface distance between
+precipitates.
+When more than one species of nanoprecipitates exist, the total
+strength enhancement can be superimposed by their respective contri­
+butions [60]:
+)0.5
+(
+∑
+2
+σp =
+Δσ j
+(12)
+j
+
+where σj is the strength increment via a type of nanoprecipitates j with a
+volume fraction fj and radius rj , respectively. The equation is consistent
+11
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+
+the shearing mechanism. While the contribution of Mo-rich phase to the
+rich
+strength increment (ΔσMo−
+Orowan ) is 290 MPa when it is dominated by the
+bypass mechanism. In SA30000 MSS, the contribution of Ni3Ti to
+strength increment is dominated by the shearing mechanism, and the
+contribution of ordered strengthening (ΔσNi3Ti
+order = 1061 MPa) is much
+higher than the other two strengthening contributions (Δσ Ni3Ti
+coherency = 163
+
+MPa and Δσ Ni3Ti
+modulus = 91 MPa). This implies that the ordered strength­
+ening of Ni3Ti plays a dominant role in the shearing mechanism. While
+the contribution of Mo-rich precipitate to the strength increment
+rich phase
+(ΔσMo−
+) is 372 MPa when it is dominated by the bypass mecha­
+Orowan
+
+− Cr
+nism. For α′-Cr, the ordered strengthening (Δσ αorder
+= 340 MPa) is much
+
+ʹ
+
+− Cr
+larger than the modulus mismatch strengthening (Δσαmodulus
+= 22 MPa)
+
+ʹ
+
+αʹ − Cr
+
+and coherency strengthening (Δσcoherency = 32 MPa), which means that
+
+the order strengthening of α′-Cr plays a dominant role in the shearing
+= 925 MPa and
+mechanism. The theoretical strength increments (σSA3000
+p
+
+σ SA30000
+= 1175 MPa) of precipitation strengthening are obtained by
+p
+
+Mo− rich
+α − Cr
+substituting Δσ Ni3Ti
+order , Δσ Orowan and Δσ order into Eq. (12). The theoretical
+strengths agree well with the values of experimental strength.
+The contributions of the shearing and Orowan looping mechanisms
+from the various nanoprecipitates to the increment in strength were
+evaluated. Based on the properties of nanoprecipitates from TEM and
+APT, for each kind of precipitate, both shearing and Orowan looping
+mechanisms are evaluated and compared to the experimental data.
+Table 4 demonstrates the strengthening contributions from the various
+nanoprecipitates and the corresponding strengthening mechanism. The
+Ni-rich clusters and Ni3Ti precipitates mainly contribute to the strength
+with the shearing mechanism. Mo-rich clusters contribute to the
+strength by the shearing mechanism. However, when the Mo-rich clus­
+ters coarsen into the hexagonal Mo-rich phase, the strengthening
+mechanism transfers from shearing mechanism to Orowan looping
+mechanism. The α′-Cr precipitates contributes the strength mainly by
+shearing mechanism.
+To verify the validity of the strengthening mechanism for various
+precipitates, the concept of the critical radius was applied. The critical
+radius is estimated when the strength increments produced by the
+shearing and Orowan mechanisms are equal [13,71]. Beyond this crit­
+ical radius, dislocations will bypass precipitates rather than shearing.
+For Ni3Ti precipitates, the critical radius is 5.37 nm. The critical radius
+of Mo-rich precipitates is calculated as 6.52 nm. The critical radius of
+α′-Cr precipitate is 5.94 nm. The APT results indicate that the radius of
+Ni3Ti precipitates is 0.95 nm, 1.11 nm, 3.43 nm and 3.89 nm after aging
+for 30 min, 300 min, 3000 min and 30000 min, respectively, smaller
+than the critical radius. Thus, it is reasonable that Ni3Ti precipitates
+strengthens the steel by shearing mechanism. The radius of Mo-rich
+clusters is 1.47 nm, which is smaller than the critical radius. So, the
+shearing mechanism is reasonable. The size of Mo-rich phases developed
+from Mo-rich clusters aging for 3000 min and 30000 min are 6.81 nm
+and 8.02 nm respectively, which are larger than the critical radius. Thus,
+the bypassing mechanism is reasonable. For α′-Cr precipitates, the size is
+1.53 nm, which is smaller than the critical radius. So, the shearing
+mechanism is reasonable.
+
+ʹ
+
+Fig. 9. Total YS of ST, SA300 and SA30000 MSS contributed by each
+strengthening mechanism.
+
+with the lower strengthening effect produced when different nano­
+precipitates form at the interface of other metallic interstitials [70],
+because their individual contributions are lower than their separate
+formation.
+In the SA30 and SA300 MSS, a large number of fine Ni-rich and Morich cluster were observed in the results of APT. During plastic defor­
+mation, additional energy from the anti-phase boundary is demanded by
+the dislocations to shear these nanoprecipitates, which is the major
+factor for increasing the strength at the early aging [45]. Therefore, Ni
+rich clusters and Mo rich clusters are considered to employ the shearing
+mechanism. The theoretical contributions of Ni-Ti and Mo-rich nano­
+precipitates to the precipitation strengthening were calculated accord­
+cluster
+ing to Eqs. 8–10. In the SA30 MSS, Δσ Ni−
+= 546 MPa is larger than
+order
+cluster
+Ni− cluster
+ΔσNi−
+coherency = 123 MPa and Δσ modulus = 71 MPa, which means that order
+
+cluster
+strengthening (Δσ Ni−
+) makes the major contribution in the shearing
+order
+
+cluster
+= 643 MPa is larger than
+mechanism. In the SA300 MSS, ΔσNi−
+order
+cluster
+Ni− cluster
+ΔσNi−
+coherency = 135 MPa and Δσ modulus = 77 MPa, which means that order
+
+cluster
+) makes the major contribution in the shearing
+strengthening (Δσ Ni−
+order
+
+cluster
+mechanism. As for Mo-rich cluster, Δσ Mo−
+= 343 MPa is greater than
+order
+
+cluster
+Mo− cluster
+= 72 MPa, which implies that
+ΔσMo−
+coherency = 190 MPa and Δσ modulus
+
+cluster
+order strengthening (ΔσMo−
+) is the dominant contribution in the
+order
+= 545
+shearing mechanism. The theoretical strength increments (σSA30
+p
+
+MPa and σ SA300
+= 727 MPa) of precipitation strengthening are obtained
+p
+
+cluster
+cluster
+by substituting Δσ Ni−
+and ΔσMo−
+into Eq. (12). The theoretical
+order
+order
+)
+strength is close to the value of experimental strength (σexperimental ,
+indicating that shear strengthening at the under-aged state is the main
+mechanism of precipitation strengthening, as shown in Fig. 9.
+Upon further aging, the nano precipitates grow gradually. In SA3000
+MSS, the nanoprecipitates mainly consist of Ni3Ti and Mo-rich phases.
+While in SA30000 MSS, three types of nanoprecipitates were observed in
+the matrix (Figs. 6 and 7), including Ni3Ti, Mo-rich and α′-Cr phases. The
+shearing mechanism is considered in the calculation of Ni3Ti contribu­
+tion to the theoretical strength increment. Mo-rich phases are incoherent
+with the matrix. Therefore, only the bypass mechanism is considered.
+For the α′-Cr, the shearing mechanism is considered [13].
+Fig. 9 demonstrates the contributions of the nanoprecipitates to the
+theoretical strength increment. In SA3000 MSS, the contribution of
+Ni3Ti to the strength increment is dominated by the shearing mecha­
+nism, and the contribution of ordered strengthening (Δσ Ni3Ti
+order = 879 MPa)
+Ni3Ti
+is much higher than ΔσNi3Ti
+=
+143
+MPa
+and
+Δ
+σ
+coherency
+modulus = 81 MPa. This
+
+4.3. The effects of RA
+Typically, the TRIP effect of RA is used to improve ductility in
+maraging steels [22,72]. In addition, the martensite formation process
+relaxes stresses by forming martensite-favorable variants in the region of
+stress concentration, which retards the formation and propagation of
+cracks and contributes significantly to the improvement of uniform
+deformation [73]. Comparing the engineering stress-strain curves (Fig. 1
+a), the curve of the over-aged state exhibits high strengths without a
+significant loss of plasticity. This is mainly due to the existence of RA in
+the over-aged condition, and the RA undergoes a TRIP effect during
+
+implies that the ordered strengthening of Ni3Ti plays a dominant role in
+
+12
+
+J. Li et al.
+
+The high strength MSS was developed utilizing multiple nano­
+precipitates and RA. The steel shows an excellent combination of me­
+chanical properties with a YS of ~1750 MPa, a TS of ~1910 MPa and a
+TE of ~10.5 % at room temperature. The following conclusions can be
+drawn.
+
+1750
+1778
+340
+
+1. At different aging time at 480 ◦ C, the matrix consists of martensite
+with a high dislocation density. Three types of nanoprecipitates and
+RA appear in the matrix after aging, including Ni3Ti, Mo-rich, and
+α′-Cr precipitates. The contribution of strength increment comes
+from precipitation strengthening. Ductility increases from the TRIP
+effect of RA.
+2. During aging, there is a certain precipitation sequence: Ni-rich
+cluster→ Ni-rich cluster + Mo-rich cluster→ Ni3Ti + Mo-rich
+phase→ Ni3Ti + Mo-rich phase + α′-Cr. The evolution of the 0.95 nm
+Ni-rich clusters into 3.43 nm Ni3Ti is not significantly coarsened.
+Because the Mo-rich phase wrapped around Ni-rich cluster or Ni3Ti
+that inhibit the coarsening of Ni3Ti to ensure a strong precipitation
+strengthening effect after long-time aging. Conversely, Mo-rich
+clusters coarsen significantly from 1.47 nm to 6.81 nm of Mo-rich
+phase, which leads to a shift in the precipitation strengthening
+mechanism. The radius of the finally precipitated α′-Cr is 1.53 nm.
+3. In the early stage of aging, only Ni-rich clusters are present, while
+Mo-rich and α′-Cr phases gradually appear with the increasing aging
+time. The concentrations of Ni and Ti in Ni-rich cluster cores grad­
+ually increase, while the concentrations of Fe, Co, Mo and Cr grad­
+ually decrease. Finally, the ratio of Ni to Ti in the cluster cores
+approaches 3:1 and reaches a stable state, forming the hexagonal
+structure Ni3Ti. The Ni-rich cluster formed at the beginning of aging
+can serve as heterogeneous nucleation sites for the Mo-rich and α′-Cr
+phase.
+4. The yield strength increment increases with the increase of the
+nanoprecipitate types. The Ni-rich clusters offer precipitation
+strengthening contributions of 545 MPa. Ni-rich clusters together
+with Mo-rich clusters provide 720 MPa precipitation strengthening
+contribution. Ni3Ti coupled with coarsened Mo-rich phase gives 920
+MPa precipitation strengthening contribution. Ni3Ti combined with
+Mo-rich phase and α′-Cr provide 1170 MPa precipitation strength­
+ening contribution. Ni-rich clusters, Mo-rich clusters, Ni3Ti and α′-Cr
+contribute to precipitation strengthening mainly by shear mecha­
+nisms, where ordered strengthening being the most significant. The
+Mo-rich phases contribute to the precipitation strengthening pri­
+marily through a bypass mechanism.
+
+22
+372
+
+290
+343
+72
+
+1061
+91
+320
+127
+
+163
+
+Junpeng Li: Writing – review & editing, Writing – original draft,
+Formal analysis, Data curation. Weiguo Jiang: Validation. Yang
+Zhang: Writing – review & editing, Methodology. Liyuan Liu: Writing –
+review & editing, Writing – original draft, Investigation. Yongzheng
+Yu: Writing – original draft, Methodology. Junhua Luan: Visualization,
+Validation, Methodology. Zengbao Jiao: Writing – review & editing,
+Validation, Supervision. Chain Tsuan Liu: Writing – review & editing,
+Supervision. Zhongwu Zhang: Writing – review & editing, Writing –
+original draft, Visualization, Validation, Supervision, Resources, Meth­
+odology, Investigation, Funding acquisition, Formal analysis.
+
+SA30000
+
+SA3000
+
+CRediT authorship contribution statement
+
+156
+
+335
+186
+
+135
+
+143
+
+81
+
+879
+
+190
+546
+643
+71
+77
+
+None
+Ni-rich cluster
+Ni-rich cluster
+Mo-rich cluster
+Ni3Ti
+Mo-rich phase
+Ni3Ti
+Mo-rich phase
+α′-Cr
+ST
+SA30
+SA300
+
+301
+235
+213
+
+391
+351
+343
+
+modulus
+
+152
+141
+135
+
+123
+135
+
+order
+modulus
+coherency
+coherency
+
+order
+shearing
+
+5. Conclusions
+
+32
+
+modulus
+coherency
+
+α′-Cr
+
+shearing
+bypass
+
+Mo-rich cluster/phase
+
+shearing
+
+Ni-rich cluster/Ni3Ti
+
+σd
+σgb
+σss
+Precipitate types
+Specimens
+
+Table 4
+Strength contribution of different strengthening mechanisms.
+
+deformation. The RAs in the present work do not contain nano­
+precipitates (Fig. 4). Although the MSS can be ensured to obtain ductility
+with ultra-high strength. However, the work-hardening ability was not
+significantly improved (Fig. 1).
+
+1175
+
+1550
+1581
+925
+
+830
+1250
+1400
+844
+1273
+1418
+order
+
+σp
+
+546
+727
+
+σexpt.
+σcal
+
+Materials Science & Engineering A 915 (2024) 147198
+
+13
+
+Materials Science & Engineering A 915 (2024) 147198
+
+J. Li et al.
+
+Declaration of competing interest
+
+[21] S.-H. Kim, H. Kim, N.J. Kim, Brittle intermetallic compound makes ultrastrong lowdensity steel with large ductility, Nature 518 (7537) (2015) 77–79.
+[22] B. He, B. Hu, H. Yen, G. Cheng, Z. Wang, H. Luo, M. Huang, High dislocation
+density–induced large ductility in deformed and partitioned steels, Science 357
+(6355) (2017) 1029–1032.
+[23] J. Gao, S. Jiang, H. Zhang, Y. Huang, D. Guan, Y. Xu, S. Guan, L.A. Bendersky, A.
+V. Davydov, Y. Wu, Facile route to bulk ultrafine-grain steels for high strength and
+ductility, Nature 590 (7845) (2021) 262–267.
+[24] L. Liu, Y. Zhang, J. Ma, Y. Shang, J. Han, J. Li, Z. Zhang, Transition of plastic
+deformation mechanisms governed by spacing of nano-precipitates in a high
+entropy alloy, Scripta Mater. 217 (2022) 114771.
+[25] J. Hu, L.-X. Du, G.-S. Sun, H. Xie, R. Misra, The determining role of reversed
+austenite in enhancing toughness of a novel ultra-low carbon medium manganese
+high strength steel, Scripta Mater. 104 (2015) 87–90.
+[26] L. Yuan, D. Ponge, J. Wittig, P. Choi, J.A. Jiménez, D. Raabe, Nanoscale austenite
+reversion through partitioning, segregation and kinetic freezing: example of a
+ductile 2 GPa Fe–Cr–C steel, Acta Mater. 60 (6–7) (2012) 2790–2804.
+[27] Y. Fan, B. Zhang, H. Yi, G. Hao, Y. Sun, J. Wang, E.-H. Han, W. Ke, The role of
+reversed austenite in hydrogen embrittlement fracture of S41500 martensitic
+stainless steel, Acta Mater. 139 (2017) 188–195.
+[28] D. Raabe, S. Sandlöbes, J. Millán, D. Ponge, H. Assadi, M. Herbig, P.-P. Choi,
+Segregation engineering enables nanoscale martensite to austenite phase
+transformation at grain boundaries: a pathway to ductile martensite, Acta Mater.
+61 (16) (2013) 6132–6152.
+[29] J. Escobar, G. Faria, E. Maia, J. Oliveira, T. Boll, S. Seils, P. Mei, A. Ramirez,
+Fundamentals of isothermal austenite reversion in a Ti-stabilized 12Cr–6 Ni–2 Mo
+super martensitic stainless steel: thermodynamics versus experimental assessments,
+Acta Mater. 174 (2019) 246–259.
+[30] L. Huang, W. Lin, K. Wang, S. Song, C. Guo, Y. Chen, Y. Li, F. Liu, Grain boundaryconstrained reverse austenite transformation in nanostructured Fe alloy: model and
+application, Acta Mater. 154 (2018) 56–70.
+[31] Y.-U. Heo, M. Takeguchi, K. Furuya, H.-C. Lee, Transformation of DO24 η-Ni3Ti
+phase to face-centered cubic austenite during isothermal aging of an Fe–Ni–Ti
+alloy, Acta Mater. 57 (4) (2009) 1176–1187.
+[32] G.t. Williamson, R. Smallman, The use of Fourier analysis in the interpretation of
+X-ray line broadening from cold-worked iron and molybdenum, Acta Crystallogr. 7
+(8–9) (1954) 574–581.
+[33] T. Liu, Z. Cao, H. Wang, G. Wu, J. Jin, W. Cao, A new 2.4 GPa extra-high strength
+steel with good ductility and high toughness designed by synergistic strengthening
+of nano-particles and high-density dislocations, Scripta Mater. 178 (2020)
+285–289.
+[34] L. Liu, Y. Zhang, J. Li, M. Fan, X. Wang, G. Wu, Z. Yang, J. Luan, Z. Jiao, C.T. Liu,
+Enhanced strength-ductility synergy via novel bifunctional nano-precipitates in a
+high-entropy alloy, Int. J. Plast. 153 (2022) 103235.
+[35] Y. Zhao, X. Tong, X. Wei, S. Xu, S. Lan, X.-L. Wang, Z. Zhang, Effects of
+microstructure on crack resistance and low-temperature toughness of ultra-low
+carbon high strength steel, Int. J. Plast. 116 (2019) 203–215.
+[36] X. Wei, X. Cao, J. Luan, Z. Jiao, C. Liu, Z. Zhang, Synergy of strengthening and
+toughening of a Cu-rich precipitate-strengthened steel, Mater. Sci. Eng. A 832
+(2022) 142487.
+[37] Y. Song, X. Li, L. Rong, Y. Li, The influence of tempering temperature on the
+reversed austenite formation and tensile properties in Fe–13% Cr–4% Ni–Mo low
+carbon martensite stainless steels, Mater. Sci. Eng., A 528 (12) (2011) 4075–4079.
+[38] E. Galindo-Nava, P. Rivera-Díaz-del-Castillo, A model for the microstructure
+behaviour and strength evolution in lath martensite, Acta Mater. 98 (2015) 81–93.
+[39] K. Macek, P. Lukáš, J. Janovec, P. Mikula, P. Strunz, M. Vrána, M. Zaffagnini,
+Austenite content and dislocation density in electron-beam welds of a stainless
+maraging steel, Mater. Sci. Eng., A 208 (1) (1996) 131–138.
+[40] S. Jiang, H. Wang, Y. Wu, X. Liu, H. Chen, M. Yao, B. Gault, D. Ponge, D. Raabe,
+A. Hirata, Ultrastrong steel via minimal lattice misfit and high-density
+nanoprecipitation, Nature 544 (7651) (2017) 460–464.
+[41] C.-Y. Huang, H.-W. Yen, HRTEM investigations on nano precipitates in Custom 475
+maraging stainless steel, Mater. Char. 178 (2021) 111216.
+[42] J. Tian, W. Wang, L. Yin, W. Yan, Y. Shan, K. Yang, Three dimensional atom probe
+and first-principles studies on spinodal decomposition of Cr in a Co-alloyed
+maraging stainless steel, Scripta Mater. 121 (2016) 37–41.
+[43] K. Stiller, F. Danoix, M. Hättestrand, Mo precipitation in a 12Cr–9Ni–4Mo–2Cu
+maraging steel, Mater. Sci. Eng., A 250 (1) (1998) 22–26.
+[44] Z. Guo, W. Sha, D. Vaumousse, Microstructural evolution in a PH13-8 stainless
+steel after ageing, Acta Mater. 51 (1) (2003) 101–116.
+[45] H. Leitner, M. Schober, R. Schnitzer, Splitting phenomenon in the precipitation
+evolution in an Fe–Ni–Al–Ti–Cr stainless steel, Acta Mater. 58 (4) (2010)
+1261–1269.
+[46] E.V. Pereloma, A. Shekhter, M.K. Miller, S.P. Ringer, Ageing behaviour of an
+Fe–20Ni–1.8 Mn–1.6 Ti–0.59 Al (wt%) maraging alloy: clustering, precipitation
+and hardening, Acta Mater. 52 (19) (2004) 5589–5602.
+[47] Z.X. A, I.T. B, E.P.C. D, Clustering, nano-scale precipitation and strengthening of
+steels, Prog. Mater. Sci. (2020).
+[48] M. Hättestrand, J.-O. Nilsson, K. Stiller, P. Liu, M. Andersson, Precipitation
+hardening in a 12% Cr–9% Ni–4% Mo–2% Cu stainless steel, Acta Mater. 52 (4)
+(2004) 1023–1037.
+[49] H. Nitta, T. Yamamoto, R. Kanno, K. Takasawa, T. Iida, Y. Yamazaki, S. Ogu,
+Y. Iijima, Diffusion of molybdenum in α-iron, Acta Mater. 50 (16) (2002)
+4117–4125.
+[50] G. Hettich, H. Mehrer, K. Maier, Self-diffusion in ferromagnetic α-iron, Scripta
+Mater. 11 (9) (1977) 795–802.
+
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Data availability
+Data will be made available on request.
+Acknowledgement
+The present work was supported by the National Key Research and
+Development Project (2023YFA1609100), the NSFC Funding
+(U2141207 and 52171111), and the Natural Science Foundation of
+Heilongjiang (YQ2023E026). APT research was conducted by Dr. J.H.
+Luan at the Inter-University 3D APT Unit of City University of Hong
+Kong, which is supported by the CityU grant 9600011 and 9360161.
+References
+[1] K.H. Lo, C.H. Shek, J. Lai, Recent developments in stainless steels, Mater. Sci. Eng.
+R 65 (4–6) (2009) 39–104.
+[2] E. Galindo-Nava, W. Rainforth, P. Rivera-Díaz-del-Castillo, Predicting
+microstructure and strength of maraging steels: elemental optimisation, Acta
+Mater. 117 (2016) 270–285.
+[3] E. Galindo-Nava, P. Rivera-Díaz-del-Castillo, Understanding the factors controlling
+the hardness in martensitic steels, Scripta Mater. 110 (2016) 96–100.
+[4] S. Xu, J. Li, Y. Cui, Y. Zhang, L. Sun, J. Li, J. Luan, Z. Jiao, X.-L. Wang, C. Liu,
+Mechanical properties and deformation mechanisms of a novel austenitemartensite dual phase steel, Int. J. Plast. 128 (2020) 102677.
+[5] M. Niu, K. Yang, J. Luan, W. Wang, Z. Jiao, Cu-assisted austenite reversion and
+enhanced TRIP effect in maraging stainless steels, J. Mater. Sci. Technol. 104
+(2022) 52–58.
+[6] H. Zhang, M. Sun, Y. Liu, D. Ma, B. Xu, M. Huang, D. Li, Y. Li, Ultrafine-grained
+dual-phase maraging steel with high strength and excellent cryogenic toughness,
+Acta Mater. 211 (2021) 116878.
+[7] S.H. Nedjad, M.N. Ahmadabadi, T. Furuhara, Correlation between the
+intergranular brittleness and precipitation reactions during isothermal aging of an
+Fe–Ni–Mn maraging steel, Mater. Sci. Eng., A 490 (1–2) (2008) 105–112.
+[8] N. Heo, Ductile-brittle-ductile transition and grain boundary segregation of Mn and
+Ni in an Fe-6Mn-12Ni alloy, Scripta Mater. 34 (10) (1996) 1517–1522.
+[9] W. Xu, P. Rivera-Díaz-del-Castillo, W. Yan, K. Yang, D. San Martín, L. Kestens, V.
+D. Zwaag, A new ultrahigh-strength stainless steel strengthened by various
+coexisting nanoprecipitates, Acta Mater. 58 (11) (2010) 4067–4075.
+[10] Y. Li, W. Yan, J.D. Cotton, G.J. Ryan, Y. Shen, W. Wang, Y. Shan, K. Yang, A new
+1.9 GPa maraging stainless steel strengthened by multiple precipitating species,
+Mater. Des. 82 (2015) 56–63.
+[11] K. Stiller, F. Danoix, A. Bostel, Investigation of precipitation in a new maraging
+stainless steel, Appl. Surf. Sci. 94 (1996) 326–333.
+[12] J. Tian, M.B. Shahzad, W. Wang, L. Yin, Z. Jiang, K. Yang, Role of Co in formation
+of Ni-Ti clusters in maraging stainless steel, J. Mater. Sci. Technol. 34 (9) (2018)
+1671–1675.
+[13] M. Niu, L. Yin, K. Yang, J. Luan, W. Wang, Z. Jiao, Synergistic alloying effects on
+nanoscale precipitation and mechanical properties of ultrahigh-strength steels
+strengthened by Ni3Ti, Mo-enriched, and Cr-rich co-precipitates, Acta Mater. 209
+(2021) 116788.
+[14] M. Niu, G. Zhou, W. Wang, M.B. Shahzad, Y. Shan, K. Yang, Precipitate evolution
+and strengthening behavior during aging process in a 2.5 GPa grade maraging
+steel, Acta Mater. 179 (2019) 296–307.
+[15] Z. Wang, B. Niu, Q. Wang, C. Dong, J. Jie, T. Wang, T. Nieh, Designing ultrastrong
+maraging stainless steels with improved uniform plastic strain via controlled
+precipitation of coherent nanoparticles, J. Mater. Sci. Technol. 93 (2021) 60–70.
+[16] L. Sun, T. Simm, T. Martin, S. McAdam, D. Galvin, K. Perkins, P. Bagot, M. Moody,
+S. Ooi, P. Hill, A novel ultra-high strength maraging steel with balanced ductility
+and creep resistance achieved by nanoscale β-NiAl and Laves phase precipitates,
+Acta Mater. 149 (2018) 285–301.
+[17] Z. Jiao, J. Luan, M. Miller, Y. Chung, C. Liu, Co-precipitation of nanoscale particles
+in steels with ultra-high strength for a new era, Mater. Today 20 (3) (2017)
+142–154.
+[18] S. Xu, Y. Zhao, D. Chen, L. Sun, L. Chen, X. Tong, C. Liu, Z. Zhang, Nanoscale
+precipitation and its influence on strengthening mechanisms in an ultra-high
+strength low-carbon steel, Int. J. Plast. 113 (2019) 99–110.
+[19] S. Jin, X. Cao, G. Cheng, X. Lian, T. Zhu, P. Zhang, R. Yu, B. Wang, Thermally
+promoted evolution of open-volume defects and Cu precipitates in the deformed
+FeCu alloys, J. Nucl. Mater. 501 (2018) 293–301.
+[20] Z. Jiao, J. Luan, M. Miller, C. Yu, Y. Liu, C.J. Liu, Precipitate transformation from
+NiAl-type to Ni2AlMn-type and its influence on the mechanical properties of highstrength steels, Acta Mater. 110 (2016) 31–43.
+
+14
+
+J. Li et al.
+
+Materials Science & Engineering A 915 (2024) 147198
+[63] L. Liu, Y. Zhang, J. Han, X. Wang, W. Jiang, C.T. Liu, Z. Zhang, P.K. Liaw,
+Nanoprecipitate-Strengthened high-entropy alloys, Adv. Sci. 8 (23) (2021)
+2100870.
+[64] Q. Chen, Z. Huang, Z. Zhao, C. Hu, First-principles study on the structural, elastic,
+and thermodynamics properties of Ni3X (X: Al, Mo, Ti, Pt, Si, Nb, V, and Zr)
+intermetallic compounds, Appl. Phys. A 116 (3) (2014) 1161–1172.
+[65] K.S. Chan, Alloying effects on the fracture toughness of Nb-based silicides and
+Laves phases, Mater. Sci. Eng., A 409 (1–2) (2005) 257–269.
+[66] D. Schwen, E. Martinez, A. Caro, On the analytic calculation of critical size for
+alpha prime precipitation in FeCr, J. Nucl. Mater. 439 (1–3) (2013) 180–184.
+[67] J. Wang, H. Sehitoglu, Dislocation slip and twinning in Ni-based L12 type alloys,
+Intermetallics 52 (2014) 20–31.
+[68] A. Kelly, R. Nicholson. Strengthening Methods in Crystals, Elsevier publishing
+company, 1971.
+[69] K. Ma, H. Wen, T. Hu, T.D. Topping, D. Isheim, D.N. Seidman, E.J. Lavernia, J.
+M. Schoenung, Mechanical behavior and strengthening mechanisms in ultrafine
+grain precipitation-strengthened aluminum alloy, Acta Mater. 62 (2014) 141–155.
+[70] M. Kapoor, D. Isheim, G. Ghosh, S. Vaynman, M.E. Fine, Y.-W. Chung, Aging
+characteristics and mechanical properties of 1600 MPa body-centered cubic Cu and
+B2-NiAl precipitation-strengthened ferritic steel, Acta Mater. 73 (2014) 56–74.
+[71] J. Lee, H. Kim, K. Jeong, S.-J. Park, J. Moon, S.-g. Kang, H.N. Han, Prediction of
+precipitation kinetics and strengthening in FeMnAlC lightweight steels, J. Mater.
+Res. Technol. 14 (2021) 2897–2908.
+[72] M. Wang, C.C. Tasan, D. Ponge, A. Kostka, D. Raabe, Smaller is less stable: size
+effects on twinning vs. transformation of reverted austenite in TRIP-maraging
+steels, Acta Mater. 79 (2014) 268–281.
+[73] X. Chen, L. Zheng, Q. Zhu, S. Zhao, F. Yu, M. Liu, H. Liu, H. Zhang, H. Xu,
+Nanoscale interface engineering in a high Cr-Co martensitic steel, Acta Mater. 271
+(2024) 119901.
+
+[51] V. Shapovalov, A. Kurasov, Diffusion of titanium in iron, Met. Sci. Heat Treat. 17
+(9) (1975) 803–805.
+[52] R. Braun, M. Feller-Kniepmeier, Diffusion of chromium in α-iron, Phys. Status
+Solodi 90 (2) (1985) 553–561.
+[53] X. Li, Z. Yin, Y. Wang, M. Zheng, Mö ssbauer study of the composition fluctuation
+during spinodal decomposition in a 3.5 GPa Fe-10% Ni-14% Mo-19% Co (wt.%)
+maraging steel, Mater. Sci. Eng., A 212 (1) (1996) 182–185.
+[54] H. Hou, H. Li, Y. Jin, X. Wang, Z. Wen, Effect of heat treatment temperature on the
+mechanical properties of low-temperature high strength maraging steel, Mater. Sci.
+Eng., A 601 (2014) 1–6.
+[55] C. Zhang, C. Wang, S. Zhang, Y. Ding, Q. Ge, J. Su, Effect of aging temperature on
+the precipitation behavior and mechanical properties of Fe–Cr–Ni maraging
+stainless steel, Mater. Sci. Eng., A 806 (2021) 140763.
+[56] R. Tewari, S. Mazumder, I. Batra, G. Dey, S. Banerjee, Precipitation in 18 wt% Ni
+maraging steel of grade 350, Acta Mater. 48 (5) (2000) 1187–1200.
+[57] A.S. Murthy, J.E. Medvedeva, D. Isheim, S.L. Lekakh, V.L. Richards, D.C. Van Aken,
+Copper precipitation in cobalt-alloyed precipitation-hardened stainless steel,
+Scripta Mater. 66 (11) (2012) 943–946.
+[58] S. Baker, A. Asaduzzaman, M. Roy, S. Gurman, C. Binns, J. Blackman, Y. Xie,
+Atomic structure and magnetic moments in cluster-assembled nanocomposite Fe/
+Cu films, Phys. Rev. B Condens. Matter 78 (1) (2008) 014422.
+[59] L. Kong, B. Liu, Correlation of magnetic moment versus spacing distance of
+metastable fcc structured iron, Appl. Phys. Lett. 84 (18) (2004) 3627–3629.
+[60] A.J. Ardell, Precipitation hardening, Metall. Trans. A 16 (12) (1985) 2131–2165.
+[61] R.L. Fleischer, Substitutional solution hardening, Acta Mater. 11 (3) (1963)
+203–209.
+[62] R. Labusch, A statistical theory of solid solution hardening, Phys. Status Solodi 41
+(2) (1970) 659–669.
+
+15
+
+
