@@ -153,6 +153,14 @@ Five 54-atom BCC Fe supercell calculations were run on Azure VMs:
 
 **Convergence note:** The dispersed configurations required up to 175 SCF iterations due to charge sloshing in magnetically frustrated BCC Fe. Reducing `mixing_beta` from 0.7 to 0.1 resolved this. See [`dft/vps/correction.md`](./dft/vps/correction.md) for details.
 
+### 4. DFT Phase Stability of η-Ni₃Ti
+
+**Output file:** [`dft/vps/output_vm1/ni3ti_eta_v3.scf.out`](./dft/vps/output_vm1/ni3ti_eta_v3.scf.out)
+
+**Purpose:**
+- Provide a bridge between the kinetic clustering (why it starts) and the final CALPHAD equilibrium (what it becomes).
+- Determine the 0 K formation energy ($\Delta H_f$) of the 16-atom D0₂₄ cell of η-Ni₃Ti to confirm it is fundamentally stable.
+
 ---
 
 ## Results
@@ -227,6 +235,13 @@ Five 54-atom BCC Fe supercell calculations were run on Azure VMs:
 | fe54_5mo_dispersed.scf.out | −12837.95000 | 22 | ✅ Converged |
 
 **Conclusion:** Both Ni and Mo dispersed configurations are lower in energy than clustered ones at 0 K. This means clustering is **not** a ground-state preference — it requires **thermal activation** at 480 °C, consistent with the paper's kinetic precipitation sequence argument.
+
+### DFT Phase Stability of η-Ni₃Ti
+
+**Formation Energy ($\Delta H_f$):** **−0.444 eV/atom** (−42.8 kJ/mol)
+
+**Conclusion:** 
+While the 54-atom DFT results show that initial clustering requires thermal activation (kinetics), this calculation proves that the ultimate formation of the η-Ni₃Ti phase is a deep thermodynamic well. This serves as the bridge between the kinetic clustering mechanism (DFT) and the final thermodynamic equilibrium (CALPHAD), explaining *why* Ni₃Ti is the dominant, highly stable precipitate observed experimentally in the SA30000 condition.
 
 ---
 
