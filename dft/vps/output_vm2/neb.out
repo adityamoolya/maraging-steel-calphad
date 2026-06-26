@@ -1,0 +1,79 @@
+
+     Program NEB v.7.5 starts on 26Jun2026 at  7:57:24 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       4 processor cores
+     Number of MPI processes:                 4
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     15916 MiB available memory on the printing compute node when the environment starts
+
+
+     Parsing file: neb_input.in
+     Reading input from pw_1.in
+     file Fe.pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3P 3D renormalized
+     file Ni.pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3P 3D renormalized
+     Reading input from pw_2.in
+     file Fe.pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3P 3D renormalized
+     file Ni.pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3P 3D renormalized
+
+     initial path length           =  4.6679 bohr
+     initial inter-image distance  =  2.3339 bohr
+
+     string_method                 =    neb
+     restart_mode                  =    from_scratch
+     opt_scheme                    =    quick-min
+     num_of_images                 =    3
+     nstep_path                    =    1
+     CI_scheme                     =    auto
+     first_last_opt                =    F
+     use_freezing                  =    F
+     ds                            =    1.0000 a.u.
+     k_max                         =    0.3000 a.u.
+     k_min                         =    0.2000 a.u.
+     suggested k_max               =    0.6169 a.u.
+     suggested k_min               =    0.4112 a.u.
+     path_thr                      =    0.0500 eV / A
+
+     ------------------------------ iteration   1 ------------------------------
+
+     tcpu =      1.0    self-consistency for image   1
+     tcpu =   1761.9    self-consistency for image   2
+     tcpu =   2491.8    self-consistency for image   3
+
+     activation energy (->) =   0.920247 eV
+     activation energy (<-) =   0.843742 eV
+
+     image        energy (eV)        error (eV/A)        frozen
+
+         1     -51810.3010342            0.290174            T
+         2     -51809.3807870            0.433184            F
+         3     -51810.2245293            0.395743            T
+
+     climbing image =  2
+
+     path length          =  4.668 bohr
+     inter-image distance =  2.334 bohr
+
+     ---------------------------------------------------------------------------
+
+
+     neb: reached the maximum number of steps
+
+     NEB          :      1h 1m CPU      1h 4m WALL
+
+
+   This run was terminated on:   9: 1:45  26Jun2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
