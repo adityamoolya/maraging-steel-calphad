@@ -1,0 +1,84 @@
+BEGIN
+BEGIN_PATH_INPUT
+&PATH
+  string_method = 'neb'
+  nstep_path = 50
+  num_of_images = 7
+  k_max = 0.3
+  k_min = 0.2
+  CI_scheme = 'auto'
+  path_thr = 0.05
+/
+END_PATH_INPUT
+
+BEGIN_ENGINE_INPUT
+&CONTROL
+  prefix = 'fe15_ni1_neb'
+  outdir = './outdir'
+  pseudo_dir = '../../pseudo/'
+/
+&SYSTEM
+  ibrav = 1
+  celldm(1) = 10.832
+  nat = 15
+  ntyp = 2
+  ecutwfc = 45
+  ecutrho = 360
+  occupations = 'smearing'
+  smearing = 'm-v'
+  degauss = 0.02
+  nspin = 2
+  starting_magnetization(1) = 0.5
+  starting_magnetization(2) = 0.0
+/
+&ELECTRONS
+  electron_maxstep = 300
+  conv_thr = 1.0d-6
+  mixing_beta = 0.1
+  mixing_mode = 'local-TF'
+  diagonalization = 'david'
+/
+ATOMIC_SPECIES
+  Fe  55.845  Fe.pbe-spn-rrkjus_psl.1.0.0.UPF
+  Ni  58.693  Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
+K_POINTS (automatic)
+  4 4 4 0 0 0
+
+BEGIN_POSITIONS
+FIRST_IMAGE
+ATOMIC_POSITIONS (crystal)
+  Ni 0.250000 0.250000 0.250000
+  Fe 0.500000 0.000000 0.000000
+  Fe 0.000000 0.500000 0.000000
+  Fe 0.500000 0.500000 0.000000
+  Fe 0.000000 0.000000 0.500000
+  Fe 0.500000 0.000000 0.500000
+  Fe 0.000000 0.500000 0.500000
+  Fe 0.500000 0.500000 0.500000
+  Fe 0.750000 0.250000 0.250000
+  Fe 0.250000 0.750000 0.250000
+  Fe 0.750000 0.750000 0.250000
+  Fe 0.250000 0.250000 0.750000
+  Fe 0.750000 0.250000 0.750000
+  Fe 0.250000 0.750000 0.750000
+  Fe 0.750000 0.750000 0.750000
+LAST_IMAGE
+ATOMIC_POSITIONS (crystal)
+  Ni 0.000000 0.000000 0.000000
+  Fe 0.500000 0.000000 0.000000
+  Fe 0.000000 0.500000 0.000000
+  Fe 0.500000 0.500000 0.000000
+  Fe 0.000000 0.000000 0.500000
+  Fe 0.500000 0.000000 0.500000
+  Fe 0.000000 0.500000 0.500000
+  Fe 0.500000 0.500000 0.500000
+  Fe 0.750000 0.250000 0.250000
+  Fe 0.250000 0.750000 0.250000
+  Fe 0.750000 0.750000 0.250000
+  Fe 0.250000 0.250000 0.750000
+  Fe 0.750000 0.250000 0.750000
+  Fe 0.250000 0.750000 0.750000
+  Fe 0.750000 0.750000 0.750000
+END_POSITIONS
+END_ENGINE_INPUT
+END
