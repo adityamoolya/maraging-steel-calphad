@@ -1,16 +1,3 @@
-BEGIN
-BEGIN_PATH_INPUT
-&PATH
-  string_method = 'neb'
-  num_of_images = 5
-  k_max = 0.3
-  k_min = 0.2
-  CI_scheme = 'auto'
-  path_thr = 0.05
-/
-END_PATH_INPUT
-
-BEGIN_ENGINE_INPUT
 &CONTROL
   prefix = 'fe15_ni1_neb'
   outdir = './outdir'
@@ -31,7 +18,7 @@ BEGIN_ENGINE_INPUT
   starting_magnetization(2) = 0.0
 /
 &ELECTRONS
-  electron_maxstep = 300
+  electron_maxstep = 500
   conv_thr = 1.0d-6
   mixing_beta = 0.1
   mixing_mode = 'local-TF'
@@ -42,14 +29,19 @@ ATOMIC_SPECIES
   Ni  58.693  Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
 K_POINTS (automatic)
   4 4 4 0 0 0
-
-BEGIN_POSITIONS
-FIRST_IMAGE
 ATOMIC_POSITIONS (crystal)
-!START_COORDS!
-LAST_IMAGE
-ATOMIC_POSITIONS (crystal)
-!END_COORDS!
-END_POSITIONS
-END_ENGINE_INPUT
-END
+  Ni 0.000000 0.000000 0.000000
+  Fe 0.500000 0.000000 0.000000
+  Fe 0.000000 0.500000 0.000000
+  Fe 0.500000 0.500000 0.000000
+  Fe 0.000000 0.000000 0.500000
+  Fe 0.500000 0.000000 0.500000
+  Fe 0.000000 0.500000 0.500000
+  Fe 0.500000 0.500000 0.500000
+  Fe 0.750000 0.250000 0.250000
+  Fe 0.250000 0.750000 0.250000
+  Fe 0.750000 0.750000 0.250000
+  Fe 0.250000 0.250000 0.750000
+  Fe 0.750000 0.250000 0.750000
+  Fe 0.250000 0.750000 0.750000
+  Fe 0.750000 0.750000 0.750000
