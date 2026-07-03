@@ -12,7 +12,6 @@
 9. [How to Reproduce](#how-to-reproduce)
 10. [Repository Structure](#repository-structure)
 11. [References](#references)
-12. [Changelog](#changelog)
 
 ---
 
@@ -65,7 +64,7 @@ Fe–11.0Cr–4.0Co–8.0Ni–0.5Ti–5.0Mo–0.1Si–0.002C
 | **Jupyter** | Interactive notebook execution |
 | **Quantum ESPRESSO** | v7.x - DFT plane-wave pseudopotential code (MPI parallelization) |
 | **Pseudopotentials** | PBE ultrasoft (RRKJUS), spin-polarized, from `psl.1.0.0` library |
-| **Azure VMs** | 2× Standard_E4as_v4 (4 vCPU / 32 GB RAM each) for DFT jobs |
+| **Azure VMs** | 2× Standard_E4as_v4 (4 vCPU / 16 GB RAM each) for DFT jobs |
 | **tmux** | Session management for long-running DFT calculations on VMs |
 
 ---
@@ -247,7 +246,7 @@ A 128-atom (4×4×4) BCC supercell would be more realistic but is computationall
 | Wall time / SCF step | ~5 min | ~30–60 min |
 | Total wall time | ~6–14 hours | ~3–7 days |
 
-Our Azure VMs had **4 vCPU / 32 GB RAM** each - enough for 54-atom cells but not for 128-atom cells. The 54-atom cell is sufficient to answer the key question (clustered vs dispersed energy ordering) and is a standard size in the DFT literature for dilute alloy studies.
+Our Azure VMs had **4 vCPU / 16 GB RAM** each - enough for 54-atom cells but not for 128-atom cells. The 54-atom cell is sufficient to answer the key question (clustered vs dispersed energy ordering) and is a standard size in the DFT literature for dilute alloy studies.
 
 ### 3. DFT Kinetics (Vacancy Migration Barrier)
 
@@ -367,7 +366,7 @@ mpirun -np 4 pw.x -in fe54_5mo_clustered.scf.in > fe54_5mo_clustered.scf.out
 mpirun -np 4 pw.x -in fe54_5mo_dispersed.scf.in > fe54_5mo_dispersed.scf.out
 ```
 
-**Recommended hardware:** ≥4 CPU cores, ≥32 GB RAM. We used Azure Standard_E4as_v4 VMs with `tmux` for session persistence.
+**Recommended hardware:** ≥4 CPU cores, ≥16 GB RAM. We used Azure Standard_E4as_v4 VMs with `tmux` for session persistence.
 
 **Validate convergence:**
 ```bash
@@ -424,10 +423,3 @@ grep -E "JOB DONE|convergence NOT achieved|!    total energy" *.out
 7. **Messina et al.** (2014). Phys. Rev. B 90, 104203. (Solute diffusion in BCC Fe)
 
 ---
-
-## Changelog
-
-| Date | Change |
-|------|--------|
-| 2026-07-03 | Fully converged CI-NEB (7 images, 11 iterations): $E_a^{\text{mig}} = 0.661$ eV, total $E_a^{\text{diff}} = 2.76$ eV (266 kJ/mol) |
-| 2026-07-01 | Added vacancy formation energy calculations (`output_vm3`): $E_f^v = 2.10$ eV |
